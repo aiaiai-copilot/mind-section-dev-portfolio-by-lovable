@@ -81,7 +81,6 @@ const Contact = () => {
 
   const projectTypes = [
     "New Web Application",
-    "Legacy Code Modernization", 
     "API Development",
     "Technical Documentation",
     "Architecture Consulting",
