@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { Mail, MessageSquare, Phone, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { Mail, MessageSquare, Phone, Send } from 'lucide-react';
+import { useState } from 'react';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -83,7 +83,6 @@ const Contact = () => {
     "New Web Application",
     "Legacy Code Modernization", 
     "API Development",
-    "Code Quality Audit",
     "Technical Documentation",
     "Architecture Consulting",
     "Other"
