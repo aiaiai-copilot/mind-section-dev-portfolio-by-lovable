@@ -41,7 +41,7 @@ const Home = () => {
       <section className="py-20 px-4 text-center animate-fade-in">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6">
-            Mind Section
+            Mind/Section
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-4">
             Fullstack Developer Crafting
