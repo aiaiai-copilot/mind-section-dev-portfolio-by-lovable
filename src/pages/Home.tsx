@@ -1,27 +1,9 @@
-import { ArrowRight, CheckCircle, Code, Shield, Zap } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const services = [
-    {
-      icon: <Code className="h-8 w-8 text-primary" />,
-      title: 'Specification Driven Development',
-      description: 'Complete technical specifications before a single line of code. Clear contracts, comprehensive documentation, and predictable outcomes.'
-    },
-    {
-      icon: <Shield className="h-8 w-8 text-primary" />,
-      title: 'Maintainable Architecture',
-      description: 'Code structures that stand the test of time. Easy to understand, extend, and modify as your business requirements evolve.'
-    },
-    {
-      icon: <Zap className="h-8 w-8 text-primary" />,
-      title: 'Team-Ready Code',
-      description: 'Write code that any developer can pick up. Comprehensive testing, clear documentation, and consistent patterns throughout.'
-    }
-  ];
-
   const testimonials = [
     {
       quote: "The documentation and code structure made onboarding new team members incredibly smooth. Six months later, we're still building on the solid foundation.",
@@ -66,36 +48,6 @@ const Home = () => {
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-20 px-4 bg-secondary/30">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Development Methodology
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Every project follows a proven process that prioritizes long-term success over quick fixes
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="hover-scale shadow-card border-0 bg-card">
-                <CardHeader>
-                  <div className="mb-4">{service.icon}</div>
-                  <CardTitle className="text-primary">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base">
-                    {service.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
         </div>
       </section>
 
