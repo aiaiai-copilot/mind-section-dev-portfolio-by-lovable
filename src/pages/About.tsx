@@ -42,7 +42,7 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            About Mind Section
+            About Mind/Section
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             A fullstack developer passionate about creating web applications that stand the test of time. 
