@@ -211,54 +211,6 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Development Process */}
-        <section className="bg-secondary/30 p-8 md:p-12 rounded-2xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
-            Every Project Follows The Same Process
-          </h2>
-          
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
-                1
-              </div>
-              <h3 className="font-semibold text-primary mb-2">Specification</h3>
-              <p className="text-sm text-muted-foreground">
-                Complete technical specifications with API contracts and architecture diagrams
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
-                2
-              </div>
-              <h3 className="font-semibold text-primary mb-2">Architecture</h3>
-              <p className="text-sm text-muted-foreground">
-                Scalable, maintainable code structure with clear separation of concerns
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
-                3
-              </div>
-              <h3 className="font-semibold text-primary mb-2">Testing</h3>
-              <p className="text-sm text-muted-foreground">
-                Comprehensive test coverage with automated testing and quality gates
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
-                4
-              </div>
-              <h3 className="font-semibold text-primary mb-2">Documentation</h3>
-              <p className="text-sm text-muted-foreground">
-                Complete documentation for developers, users, and future maintainers
-              </p>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
   );
