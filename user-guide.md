@@ -7,45 +7,48 @@
 
 **Что редактировать:**
 - Название бренда: `"Mind/Section"`
-- Заголовок: `"Fullstack Developer"`
-- Подзаголовок: `"Crafting Maintainable Web Experiences"`
-- Описание: текст про "Specification Driven Development" (начинается с "I specialize in Specification Driven Development...")
-- Кнопки: `"View My Work"` и `"Contact Me"`
+- Основной заголовок: `"Fullstack Developer Crafting"`
+- Подзаголовок: `"Reliable code that grows with your business"` и `"Easy to develop, extend, and maintain by teams"`
+- Блок специализации:
+  - Заголовок блока: `"Specialization"`
+  - Подзаголовок: `"Specification Driven Development"`
+  - Описание: текст начинается с "Creating web applications focused on long-term development..."
+- Кнопка: `"Start Your Project"`
 
 ### Featured Projects Section
 **Где найти:** Секция с заголовком "Featured Projects"
 
 **Что редактировать:**
 - Заголовок секции: `"Featured Projects"`
-- Для каждого проекта (массив `featuredProjects`):
-  - `title` - название проекта
-  - `description` - описание проекта
-  - `features` - список ключевых особенностей (массив строк)
-
-**Текущие проекты:**
-1. E-Commerce Platform
-2. Healthcare Management System
-3. Financial Dashboard
+- Описание секции: `"Real-world applications built with maintainability at the core"`
+- Проекты (2 карточки):
+  - **E-Commerce Platform**
+    - Описание: `"Multi-tenant architecture with comprehensive API documentation"`
+    - Особенности: 3 пункта со значком CheckCircle
+  - **SaaS Dashboard**
+    - Описание: `"Real-time analytics platform with modular component system"`
+    - Особенности: 3 пункта со значком CheckCircle
+- Кнопка: `"View All Projects"`
 
 ### Testimonials Section  
 **Где найти:** Секция с заголовком "Client Success Stories"
 
 **Что редактировать:**
 - Заголовок секции: `"Client Success Stories"`
+- Описание секции: `"Long-term partnerships built on reliable, maintainable code"`
 - Для каждого отзыва (массив `testimonials`):
   - `quote` - текст отзыва
   - `author` - имя автора
   - `role` - должность и компания
 
 **Текущие отзывы:**
-1. Sarah Johnson, CTO at TechCorp
-2. Michael Chen, Product Manager at StartupXYZ
-3. Emily Rodriguez, Lead Developer at InnovateLabs
+1. Sarah Chen, CTO, TechStart Inc.
+2. Marcus Rodriguez, Lead Developer, Scale Systems
 
 ### Call to Action
-**Где найти:** Последняя секция с текстом "Ready to Start Your Project?"
+**Где найти:** Последняя секция с текстом "Ready to Build Something Maintainable?"
 
 **Что редактировать:**
-- Заголовок: `"Ready to Start Your Project?"`
-- Описание: текст под заголовком (начинается с "Let's discuss how Specification Driven Development...")
-- Текст кнопок: `"Get In Touch"` и `"View Portfolio"`
+- Заголовок: `"Ready to Build Something Maintainable?"`
+- Описание: `"Let's discuss your project and create a specification that sets your team up for long-term success."`
+- Кнопки: `"Get Started Today"` и `"View Our Work"`
