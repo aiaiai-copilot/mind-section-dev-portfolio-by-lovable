@@ -4,6 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 import { Mail, Send } from 'lucide-react';
 import { useState } from 'react';
 
@@ -18,34 +19,59 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic form validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
-        title: "Required fields missing",
-        description: "Please fill in all required fields.",
+        title: "Ошибка",
+        description: "Пожалуйста, заполните все обязательные поля",
         variant: "destructive"
       });
       return;
     }
 
-    // In a real application, this would send the data to your backend
-    toast({
-      title: "Message sent successfully!",
-      description: "I'll get back to you within 24 hours.",
-    });
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Ошибка",
+        description: "Пожалуйста, введите корректный email",
+        variant: "destructive",
+      });
+      return;
+    }
 
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      projectType: '',
-      budget: '',
-      message: ''
-    });
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Сообщение отправлено!",
+        description: "Спасибо за ваше обращение. Я свяжусь с вами в течение 24 часов.",
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        projectType: '',
+        budget: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Ошибка",
+        description: "Не удалось отправить сообщение. Попробуйте позже или напишите на alexanderlapygin@gmail.com",
+        variant: "destructive",
+      });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
