@@ -32,7 +32,7 @@ const handler = async (req: Request): Promise<Response> => {
       connection: {
         hostname: Deno.env.get('SMTP_HOST') as string,
         port: Number(Deno.env.get('SMTP_PORT')),
-        tls: false,
+        tls: true,
         auth: {
           username: Deno.env.get('SMTP_USER') as string,
           password: Deno.env.get('SMTP_PASSWORD') as string,
