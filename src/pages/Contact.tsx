@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { Mail, MessageSquare, Phone, Send } from 'lucide-react';
+import { Mail, Send } from 'lucide-react';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -63,20 +63,20 @@ const Contact = () => {
       contact: "alexanderlapygin@gmail.com",
       action: "mailto:alexanderlapygin@gmail.com"
     },
-    {
-      icon: <MessageSquare className="h-6 w-6 text-primary" />,
-      title: "Project Discussion",
-      description: "Schedule a consultation call",
-      contact: "30-minute free consultation",
-      action: "https://calendly.com"
-    },
-    {
-      icon: <Phone className="h-6 w-6 text-primary" />,
-      title: "Phone",
-      description: "Direct line for urgent inquiries",
-      contact: "+1 (555) 123-4567",
-      action: "tel:+15551234567"
-    }
+    // {
+    //   icon: <MessageSquare className="h-6 w-6 text-primary" />,
+    //   title: "Project Discussion",
+    //   description: "Schedule a consultation call",
+    //   contact: "30-minute free consultation",
+    //   action: "https://calendly.com"
+    // },
+    // {
+    //   icon: <Phone className="h-6 w-6 text-primary" />,
+    //   title: "Phone",
+    //   description: "Direct line for urgent inquiries",
+    //   contact: "+1 (555) 123-4567",
+    //   action: "tel:+15551234567"
+    // }
   ];
 
   const projectTypes = [
