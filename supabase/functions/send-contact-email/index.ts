@@ -23,7 +23,10 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { name, email, company, projectType, budget, message, timeline }: ContactEmailRequest = await req.json();
+    const requestBody = await req.text();
+    console.log('Raw request body:', requestBody);
+    
+    const { name, email, company, projectType, budget, message, timeline }: ContactEmailRequest = JSON.parse(requestBody);
 
     console.log('Sending contact email from:', email);
 
