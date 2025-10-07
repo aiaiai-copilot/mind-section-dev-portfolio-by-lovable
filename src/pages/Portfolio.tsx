@@ -1,7 +1,7 @@
-import { ExternalLink, Github, CheckCircle } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { CheckCircle, ExternalLink, Github } from 'lucide-react';
 
 const Portfolio = () => {
   const projects = [

@@ -60,8 +60,8 @@ const Contact = () => {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
       description: "Send me a detailed project inquiry",
-      contact: "contact@mindsection.dev",
-      action: "mailto:contact@mindsection.dev"
+      contact: "alexanderlapygin@gmail.com",
+      action: "mailto:alexanderlapygin@gmail.com"
     },
     {
       icon: <MessageSquare className="h-6 w-6 text-primary" />,

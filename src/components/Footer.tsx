@@ -27,7 +27,7 @@ const Footer = () => {
             <h4 className="font-medium text-primary mb-4">Connect</h4>
             <div className="flex space-x-4">
               <a
-                href="mailto:contact@mindsection.dev"
+                href="mailto:alexanderlapygin@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
               >
