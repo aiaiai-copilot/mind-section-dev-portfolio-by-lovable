@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
   const location = useLocation();
-  const isContactPage = location.pathname === '/contact';
+  const isContactPage = location.pathname.includes('/contact');
 
   return (
     <footer className="bg-secondary/50 border-t border-border mt-20">
