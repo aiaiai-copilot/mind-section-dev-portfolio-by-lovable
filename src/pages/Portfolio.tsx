@@ -152,7 +152,7 @@ const Portfolio = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {Object.entries(project.metrics).map(([key, value]) => (
               <div key={key} className="text-center p-2 bg-secondary/30 rounded">
-                <div className="font-semibold text-primary">{value}</div>
+                <div className="font-semibold text-primary">{String(value)}</div>
                 <div className="text-xs text-muted-foreground capitalize">{key.replace(/([A-Z])/g, ' $1')}</div>
               </div>
             ))}

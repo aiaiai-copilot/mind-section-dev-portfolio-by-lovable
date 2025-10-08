@@ -1,6 +1,10 @@
 import { Github, Mail } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const location = useLocation();
+  const isContactPage = location.pathname === '/contact';
+
   return (
     <footer className="bg-secondary/50 border-t border-border mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -26,13 +30,23 @@ const Footer = () => {
           <div>
             <h4 className="font-medium text-primary mb-4">Connect</h4>
             <div className="flex space-x-4">
-              <a
-                href="mailto:alexanderlapygin@gmail.com"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Email"
-              >
-                <Mail className="h-5 w-5" />
-              </a>
+              {isContactPage ? (
+                <a
+                  href="mailto:alexanderlapygin@gmail.com"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Email"
+                >
+                  <Mail className="h-5 w-5" />
+                </a>
+              ) : (
+                <Link
+                  to="/contact"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Contact"
+                >
+                  <Mail className="h-5 w-5" />
+                </Link>
+              )}
               <a
                 href="https://github.com/aiaiai-copilot"
                 className="text-muted-foreground hover:text-primary transition-colors"
