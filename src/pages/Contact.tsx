@@ -127,13 +127,13 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Let's Build Something Great
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-4xl font-bold text-primary mb-6">
+            Let's discuss your project and create a specification for success.
+          </h2>
+          {/* <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to create maintainable, well-documented software that grows with your business? 
             Let's discuss your project and create a specification for success.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -317,15 +317,15 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-medium text-primary mb-1">What's your typical project timeline?</h4>
-                    <p className="text-sm text-muted-foreground">Most projects range from 2-6 months, depending on complexity. I provide detailed timelines in the specification phase.</p>
+                    <p className="text-sm text-muted-foreground">Most projects range from 1-2 months, depending on complexity. I provide detailed timelines in the specification phase.</p>
                   </div>
-                  <div>
+                  {/* <div>
                     <h4 className="font-medium text-primary mb-1">Do you work with existing teams?</h4>
                     <p className="text-sm text-muted-foreground">Absolutely. I often collaborate with internal teams, providing architecture guidance and mentoring on best practices.</p>
-                  </div>
+                  </div> */}
                   <div>
                     <h4 className="font-medium text-primary mb-1">What technologies do you specialize in?</h4>
-                    <p className="text-sm text-muted-foreground">I focus on modern web technologies: React, TypeScript, Node.js, and PostgreSQL, always chosen based on project needs.</p>
+                    <p className="text-sm text-muted-foreground">I focus on web technologies: React, TypeScript, Node.js, and PostgreSQL, always chosen based on project needs.</p>
                   </div>
                 </div>
               </CardContent>

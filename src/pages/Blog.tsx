@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
-import { Calendar, Clock, ArrowRight } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import developerPhoto from '@/assets/developer-photo.png';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { blogPosts } from '@/data/blogPosts';
-import developerPhoto from '@/assets/developer-photo.png';
+import { ArrowRight, Calendar, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   const categories = ["All", "Case Study", "Methodology", "API Design", "Frontend"];
@@ -117,7 +117,7 @@ const Blog = () => {
         </section>
 
         {/* Newsletter Signup */}
-        <section className="bg-secondary/30 p-8 md:p-12 rounded-2xl text-center">
+        {/* <section className="bg-secondary/30 p-8 md:p-12 rounded-2xl text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
             Stay Updated
           </h2>
@@ -133,7 +133,7 @@ const Blog = () => {
             />
             <Button>Subscribe</Button>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

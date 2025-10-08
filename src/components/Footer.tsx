@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg text-primary mb-4">Mind/Section</h3>
             <p className="text-muted-foreground">
-              Crafting maintainable web experiences through Specification Driven Development.
+              Crafting maintainable web experiences through Spec-Driven Development.
               Reliable code that grows with your business.
             </p>
           </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                 <Mail className="h-5 w-5" />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/aiaiai-copilot"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -42,7 +42,7 @@ const Footer = () => {
               >
                 <Github className="h-5 w-5" />
               </a>
-              <a
+              {/* <a
                 href="https://linkedin.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
@@ -50,7 +50,7 @@ const Footer = () => {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

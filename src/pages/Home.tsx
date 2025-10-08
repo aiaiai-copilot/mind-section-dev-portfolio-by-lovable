@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -53,15 +52,15 @@ const Home = () => {
       </section>
 
       {/* Portfolio Preview */}
-      <section className="py-20 px-4">
+      {/* <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
               Featured Projects
             </h2>
-            {/* <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground">
               Real-world applications built with maintainability at the core
-            </p> */}
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -125,10 +124,10 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
-      <section className="py-20 px-4 bg-secondary/30">
+      {/* <section className="py-20 px-4 bg-secondary/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -153,10 +152,10 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
-      <section className="py-20 px-4">
+      {/* <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
             Ready to Build Something Maintainable?
@@ -178,7 +177,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

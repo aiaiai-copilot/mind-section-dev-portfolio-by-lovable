@@ -28,7 +28,16 @@ const About = () => {
     {
       category: "Development",
       icon: <Code2 className="h-6 w-6 text-primary" />,
-      technologies: ["AI Tools", "Spec-Driven Development", "Test-Driven Development", "Docker", "Git", "Documentation"]
+      technologies: [
+        "AI Tools",
+        "Spec-Driven Development",
+        "Test-Driven Development",
+        "API-First Approach",
+        "Docker",
+        "Git",
+        "Documentation"
+      , "Code Review"
+      ]
     }
   ];
 
@@ -47,8 +56,7 @@ const About = () => {
             About Mind/Section
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Web applications built to last — with explicit structure, thorough documentation,
-            and code that’s interpretable by developers and AI alike.
+            Web applications built to last — with explicit structure, thorough documentation, and code that’s good maintainable by developers and AI alike.
           </p>
         </div>
 
