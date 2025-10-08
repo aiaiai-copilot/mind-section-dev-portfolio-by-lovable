@@ -1,5 +1,7 @@
 import { CheckCircle, Code2, Database, Globe, Server } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import developerPhoto from '@/assets/developer-photo.png';
 
 const About = () => {
   const skills = [
@@ -41,6 +43,12 @@ const About = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
+          <div className="flex justify-center mb-8">
+            <Avatar className="h-32 w-32 md:h-40 md:w-40 border-4 border-primary/20 shadow-elegant">
+              <AvatarImage src={developerPhoto} alt="Developer Photo" />
+              <AvatarFallback>MS</AvatarFallback>
+            </Avatar>
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             About Mind/Section
           </h1>
