@@ -11,7 +11,7 @@ const About = () => {
     {
       category: "Backend", 
       icon: <Server className="h-6 w-6 text-primary" />,
-      technologies: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis"]
+      technologies: ["Node.js", "PostgreSQL", "Redis"]
     },
     {
       category: "Architecture",

@@ -58,7 +58,7 @@ const Portfolio = () => {
       description: "HIPAA-compliant patient management system with comprehensive audit trails and extensive documentation for healthcare providers.",
       longDescription: "Built with security and compliance as primary concerns. Features comprehensive audit logging, role-based permissions, and extensive API documentation for integration with existing healthcare systems.",
       image: "/placeholder.svg",
-      technologies: ["Vue.js", "Python", "PostgreSQL", "Docker", "Kubernetes"],
+      technologies: ["React", "PostgreSQL", "Docker"],
       features: [
         "HIPAA-compliant data handling",
         "Comprehensive audit trail system",
