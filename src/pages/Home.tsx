@@ -29,16 +29,17 @@ const Home = () => {
             Fullstack Developer Crafting
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12">
-            Reliable code that grows with your business<br />
-            Easy to develop, extend, and maintain by teams
+            Sustainable code. Clear architecture.<br />
+            Documentation that works — for people and tools.
           </p>
           
           <div className="bg-gradient-subtle p-8 rounded-2xl shadow-card mb-16 animate-slide-up">
-            <h3 className="text-2xl font-bold text-primary mb-4">Specialization</h3>
-            <h4 className="text-xl font-semibold text-primary mb-4">Specification Driven Development</h4>
+            <h3 className="text-2xl font-bold text-primary mb-4">Spec-Driven Development</h3>
+            {/* <h4 className="text-xl font-semibold text-primary mb-4">Spec-Driven Development</h4> */}
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Creating web applications focused on long-term development with special attention to architecture, 
-              comprehensive documentation, full contract testing and maintainable code.
+              Building web applications designed to last — with robust architecture, comprehensive documentation,
+              thorough contract testing, and maintainable code that enables rapid onboarding for developers
+              and AI-assisted tools alike.
             </p>
           </div>
 
@@ -58,9 +59,9 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
               Featured Projects
             </h2>
-            <p className="text-xl text-muted-foreground">
+            {/* <p className="text-xl text-muted-foreground">
               Real-world applications built with maintainability at the core
-            </p>
+            </p> */}
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
