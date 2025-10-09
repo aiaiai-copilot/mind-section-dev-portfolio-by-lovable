@@ -54,11 +54,21 @@ const Footer = () => {
                           .catch(() => {});
                       }
 
-                      // Пытаемся открыть почтовый клиент в новом окне (надёжнее для Chrome/Edge/Яндекс)
-                      const win = window.open('mailto:alexanderlapygin@gmail.com', '_blank');
-                      if (!win) {
-                        // как запасной вариант
-                        window.location.href = 'mailto:alexanderlapygin@gmail.com';
+                      // Пытаемся открыть почтовый клиент с помощью временной ссылки (надёжнее для Chrome/Edge)
+                      const mailto = 'mailto:alexanderlapygin@gmail.com';
+                      const a = document.createElement('a');
+                      a.href = mailto;
+                      a.target = '_blank';
+                      a.rel = 'noopener noreferrer';
+                      document.body.appendChild(a);
+                      a.click();
+                      setTimeout(() => {
+                        try { document.body.removeChild(a); } catch {}
+                      }, 0);
+
+                      // Запасной вариант
+                      if (document.visibilityState === 'visible') {
+                        try { window.location.href = mailto; } catch {}
                       }
                     }
                   }}
