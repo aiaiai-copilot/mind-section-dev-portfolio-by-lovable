@@ -37,16 +37,25 @@ const Footer = () => {
                   className="text-muted-foreground hover:text-primary transition-colors"
                   aria-label="Email"
                   title="Написать письмо"
-                  onClick={() => {
+                  onClick={(e) => {
                     const ua = navigator.userAgent || '';
-                    const isYandex = /YaBrowser/i.test(ua);
                     const isMobile = /Mobile|Android|iPhone|iPad/i.test(ua);
-                    if (isYandex && !isMobile && navigator.clipboard) {
-                      navigator.clipboard.writeText('alexanderlapygin@gmail.com')
-                        .then(() => {
-                          toast('Адрес скопирован в буфер обмена');
-                        })
-                        .catch(() => {});
+
+                    // На десктопе: копируем адрес и явно открываем почтовый клиент
+                    if (!isMobile) {
+                      e.preventDefault();
+
+                      if (navigator.clipboard?.writeText) {
+                        navigator.clipboard
+                          .writeText('alexanderlapygin@gmail.com')
+                          .then(() => {
+                            toast('Адрес скопирован в буфер обмена');
+                          })
+                          .catch(() => {});
+                      }
+
+                      // Явно открываем mailto, чтобы обойти особенности браузеров
+                      window.location.href = 'mailto:alexanderlapygin@gmail.com';
                     }
                   }}
                 >
