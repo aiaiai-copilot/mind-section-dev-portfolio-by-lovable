@@ -31,26 +31,7 @@ const Footer = () => {
           <div>
             <h4 className="font-medium text-primary mb-4">Connect</h4>
             <div className="flex space-x-4">
-              {isContactPage ? (
-                <a
-                  href="mailto:alexanderlapygin@gmail.com"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label="Email"
-                  title="Написать письмо"
-                  onClick={() => {
-                    // Не блокируем переход по mailto. Дополнительно пробуем скопировать адрес.
-                    try {
-                      navigator.clipboard?.writeText('alexanderlapygin@gmail.com')
-                        .then(() => {
-                          toast('Адрес скопирован в буфер обмена');
-                        })
-                        .catch(() => {});
-                    } catch {}
-                  }}
-                >
-                  <Mail className="h-5 w-5" />
-                </a>
-              ) : (
+              {!isContactPage && (
                 <Link
                   to="/contact"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -68,15 +49,6 @@ const Footer = () => {
               >
                 <Github className="h-5 w-5" />
               </a>
-              {/* <a
-                href="https://linkedin.com"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a> */}
             </div>
           </div>
         </div>
