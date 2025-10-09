@@ -37,40 +37,15 @@ const Footer = () => {
                   className="text-muted-foreground hover:text-primary transition-colors"
                   aria-label="Email"
                   title="Написать письмо"
-                  onClick={(e) => {
-                    const ua = navigator.userAgent || '';
-                    const isMobile = /Mobile|Android|iPhone|iPad/i.test(ua);
-
-                    // На десктопе: копируем адрес и явно открываем почтовый клиент
-                    if (!isMobile) {
-                      e.preventDefault();
-
-                      if (navigator.clipboard?.writeText) {
-                        navigator.clipboard
-                          .writeText('alexanderlapygin@gmail.com')
-                          .then(() => {
-                            toast('Адрес скопирован в буфер обмена');
-                          })
-                          .catch(() => {});
-                      }
-
-                      // Пытаемся открыть почтовый клиент с помощью временной ссылки (надёжнее для Chrome/Edge)
-                      const mailto = 'mailto:alexanderlapygin@gmail.com';
-                      const a = document.createElement('a');
-                      a.href = mailto;
-                      a.target = '_blank';
-                      a.rel = 'noopener noreferrer';
-                      document.body.appendChild(a);
-                      a.click();
-                      setTimeout(() => {
-                        try { document.body.removeChild(a); } catch {}
-                      }, 0);
-
-                      // Запасной вариант
-                      if (document.visibilityState === 'visible') {
-                        try { window.location.href = mailto; } catch {}
-                      }
-                    }
+                  onClick={() => {
+                    // Не блокируем переход по mailto. Дополнительно пробуем скопировать адрес.
+                    try {
+                      navigator.clipboard?.writeText('alexanderlapygin@gmail.com')
+                        .then(() => {
+                          toast('Адрес скопирован в буфер обмена');
+                        })
+                        .catch(() => {});
+                    } catch {}
                   }}
                 >
                   <Mail className="h-5 w-5" />
