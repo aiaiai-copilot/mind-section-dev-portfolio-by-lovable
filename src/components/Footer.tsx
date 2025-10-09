@@ -54,8 +54,12 @@ const Footer = () => {
                           .catch(() => {});
                       }
 
-                      // Явно открываем mailto, чтобы обойти особенности браузеров
-                      window.location.href = 'mailto:alexanderlapygin@gmail.com';
+                      // Пытаемся открыть почтовый клиент в новом окне (надёжнее для Chrome/Edge/Яндекс)
+                      const win = window.open('mailto:alexanderlapygin@gmail.com', '_blank');
+                      if (!win) {
+                        // как запасной вариант
+                        window.location.href = 'mailto:alexanderlapygin@gmail.com';
+                      }
                     }
                   }}
                 >
