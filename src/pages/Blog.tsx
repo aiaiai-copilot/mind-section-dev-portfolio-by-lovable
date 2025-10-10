@@ -1,4 +1,4 @@
-import developerPhoto from '@/assets/developer-photo.jpg';
+import developerPhoto from '@/assets/developer-photo.png';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
