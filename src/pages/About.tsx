@@ -1,4 +1,4 @@
-import developerPhoto from '@/assets/developer-photo.png';
+import developerPhoto from '@/assets/developer-photo.jpg';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Code2, Database, Globe, Server } from 'lucide-react';
