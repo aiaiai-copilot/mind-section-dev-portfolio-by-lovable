@@ -325,7 +325,7 @@ const Contact = () => {
                   </div> */}
                   <div>
                     <h4 className="font-medium text-primary mb-1">What technologies do you specialize in?</h4>
-                    <p className="text-sm text-muted-foreground">I focus on web technologies: React, TypeScript, Node.js, and PostgreSQL, always chosen based on project needs.</p>
+                    <p className="text-sm text-muted-foreground">Mainly React, TypeScript, Node.js, and PostgreSQL — but I always pick the right tools for the job.</p>
                   </div>
                 </div>
               </CardContent>
