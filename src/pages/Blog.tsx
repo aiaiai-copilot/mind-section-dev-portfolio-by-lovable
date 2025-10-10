@@ -19,10 +19,11 @@ const Blog = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <div className="flex justify-center mb-8">
-            <Avatar className="h-32 w-32 md:h-40 md:w-40 border-4 border-primary/20 shadow-elegant">
-              <AvatarImage src={developerPhoto} alt="Developer Photo" />
-              <AvatarFallback>MS</AvatarFallback>
-            </Avatar>
+            <img 
+              src={developerPhoto} 
+              alt="Developer Photo" 
+              className="w-48 md:w-56 h-auto rounded-lg border-4 border-primary/20 shadow-elegant"
+            />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Development Blog
