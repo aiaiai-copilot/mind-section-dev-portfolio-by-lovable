@@ -11,10 +11,34 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: "technical-debt-case-study",
-    title: "The True Cost of Technical Debt: A 5-Year Case Study",
-    excerpt: "How one client's rushed initial development led to 300% increased maintenance costs and what we learned from the complete architecture overhaul.",
-    content: `When MegaCorp approached us in 2019, they had a working product but were drowning in technical debt. Their initial "move fast and break things" approach had resulted in a codebase that was nearly impossible to maintain.
+    id: "example-post-with-links",
+    title: "Пример поста со ссылками",
+    excerpt: "Демонстрация того, как выглядят ссылки в постах блога",
+    content: `Это пример поста, который демонстрирует, как работают ссылки.
+
+## Внутренние ссылки
+
+Вы можете создавать ссылки на другие посты в блоге, например: [посмотрите этот пост](/blog/another-post) или [вернитесь на главную](/).
+
+## Внешние ссылки
+
+Также можно ссылаться на внешние ресурсы: [посетите GitHub](https://github.com) или [документацию React](https://react.dev).
+
+## Текст с несколькими ссылками
+
+В одном параграфе может быть несколько ссылок. Например, вы можете изучить [первую часть](/blog/part-1) серии статей, затем перейти ко [второй части](/blog/part-2), и наконец прочитать [заключение](/blog/conclusion).
+
+Обычный текст без ссылок выглядит так, а **жирный текст** и ссылки должны визуально отличаться.`,
+    date: "2024-03-15",
+    readTime: "2 min read",
+    category: "Example",
+    featured: true
+  }
+//   {
+//     id: "technical-debt-case-study",
+//     title: "The True Cost of Technical Debt: A 5-Year Case Study",
+//     excerpt: "How one client's rushed initial development led to 300% increased maintenance costs and what we learned from the complete architecture overhaul.",
+//     content: `When MegaCorp approached us in 2019, they had a working product but were drowning in technical debt. Their initial "move fast and break things" approach had resulted in a codebase that was nearly impossible to maintain.
 
 ## The Problem
 
