@@ -76,6 +76,16 @@ const BlogPost = () => {
               strong: ({ children }) => (
                 <strong className="font-semibold text-primary">{children}</strong>
               ),
+              a: ({ href, children }) => (
+                <a 
+                  href={href}
+                  className="text-primary font-medium underline decoration-primary/30 underline-offset-4 hover:decoration-primary hover:text-primary/80 transition-all duration-200"
+                  target={href?.startsWith('http') ? '_blank' : undefined}
+                  rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                >
+                  {children}
+                </a>
+              ),
             }}
           >
             {post.content}
