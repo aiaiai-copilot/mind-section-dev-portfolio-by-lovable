@@ -33,12 +33,12 @@ export const blogPosts: BlogPost[] = [
     readTime: "2 min read",
     category: "Example",
     featured: true
-  }
-//   {
-//     id: "technical-debt-case-study",
-//     title: "The True Cost of Technical Debt: A 5-Year Case Study",
-//     excerpt: "How one client's rushed initial development led to 300% increased maintenance costs and what we learned from the complete architecture overhaul.",
-//     content: `When MegaCorp approached us in 2019, they had a working product but were drowning in technical debt. Their initial "move fast and break things" approach had resulted in a codebase that was nearly impossible to maintain.
+  },
+  {
+    id: "technical-debt-case-study",
+    title: "The True Cost of Technical Debt: A 5-Year Case Study",
+    excerpt: "How one client's rushed initial development led to 300% increased maintenance costs and what we learned from the complete architecture overhaul.",
+    content: `When MegaCorp approached us in 2019, they had a working product but were drowning in technical debt. Their initial "move fast and break things" approach had resulted in a codebase that was nearly impossible to maintain.
 
 ## The Problem
 
