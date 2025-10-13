@@ -128,7 +128,7 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-4xl font-bold text-primary mb-6">
-            Let's discuss your project and create a specification for success.
+            Let's discuss your project.
           </h2>
           {/* <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to create maintainable, well-documented software that grows with your business? 
