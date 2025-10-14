@@ -52,7 +52,7 @@ Each time, a very quick creation—in a matter of ten or twenty minutes—of sim
 
 However, no one demonstrated what might happen to these applications afterward: how suitable they were for **further growth** and to what extent these, or any other AI tools, could support such growth.
 
-Could the established development pace be maintained, or at least not significantly slowed down, during the product's further evolution, or would it be back to the "do-it-yourself" method, using one's own hands?
+Will we be able to maintain the current pace of development, or at least not significantly slowed down, during the product's further evolution, or will we have to return to the "do it yourself" method?
 
 Not to mention the question of whether this miraculous AI toolkit could somehow be applied to existing, so-called **brownfield projects**, which virtually all existing codebases consist of.
 
