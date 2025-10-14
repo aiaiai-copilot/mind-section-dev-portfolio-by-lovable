@@ -185,10 +185,6 @@ const Portfolio = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Portfolio
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Real-world applications built with maintainable architecture, comprehensive documentation, 
-            and Spec-Driven Development practices.
-          </p>
         </div>
 
         {/* Featured Projects */}

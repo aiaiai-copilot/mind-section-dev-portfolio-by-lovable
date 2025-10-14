@@ -60,7 +60,7 @@ const About = () => {
             About Mind/Section
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Web applications built to last — with explicit structure, thorough documentation, and code that’s good maintainable by developers and AI alike.
+            Web applications built to last — with explicit structure, thorough documentation, and code that’s good maintainable by developers and AI alike
           </p>
         </div>
 

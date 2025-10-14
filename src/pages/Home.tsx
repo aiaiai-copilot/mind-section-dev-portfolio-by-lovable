@@ -29,7 +29,7 @@ const Home = () => {
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12">
             Sustainable code. Clear architecture.<br />
-            Documentation that works — for people and tools.
+            Documentation that works — for people and tools
           </p>
           
           <div className="bg-gradient-subtle p-8 rounded-2xl shadow-card mb-16 animate-slide-up">
