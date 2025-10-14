@@ -40,62 +40,43 @@ I hope that someone will find something interesting and useful in these publicat
   {
     id: "sdd-backstory",
     title: "Backstory",
-    excerpt: "TBD",
-    content: `TBD
+    excerpt: "The 'Vibe Coding' boom, fueled by tools like Lovable and Replit, is great for quick MVPs, but the real question is scalability. We're wondering whether LLMs can move from 'wow effects' to managing the long-term growth and maintenance of complex brownfield projects.",
+    content: `## Vibe Coding: Euphoria, Expectations and Questions
+
+The emergence of the term **Vibe Coding** (coined by Andrej Karpathy) at the beginning of this year (2025) and the endless stream of demonstrations showing the rapid creation of web applications using AI services like Lovable, Bolt, Replit, etc., were likely met with mixed feelings by many.
+
+On one hand, there was undeniable progress: nothing like this had been seen before.
+On the other hand, the uniformity of these examples was very unsettling.
+
+Each time, a very quick creation—in a matter of ten or twenty minutes—of simple, yet fully functional, applications was demonstrated based on straightforward, one or two-paragraph prompt requirements, often even recorded by voice. Clearly, these tools were perfect for small websites, web application prototypes, and simple MVPs.
+
+However, no one demonstrated what might happen to these applications afterward: how suitable they were for **further growth** and to what extent these, or any other AI tools, could support such growth.
+
+Could the established development pace be maintained, or at least not significantly slowed down, during the product's further evolution, or would it be back to the "do-it-yourself" method, using one's own hands?
+
+Not to mention the question of whether this miraculous AI toolkit could somehow be applied to existing, so-called **brownfield projects**, which virtually all existing codebases consist of.
+
+Ultimately, people wanted to see something more serious than mere **"wow effects,"** which, obviously, won't sustain anyone for long. The question arose about the possibility of using LLMs to manage **long-term software development processes**.
 
 ---
-[Previous](sdd-intro)
-    `,
-    date: "2025-10-13",
+[Previous](sdd-intro) | [Next](sdd-backstory-tbd)
+`,
+    date: "2025-10-14",
+    readTime: "1 min read",
+    category: "sdd",
+    featured: true
+  },
+  {
+    id: "sdd-backstory-tbd",
+    title: "TBD",
+    excerpt: "TBD",
+    content: `## TBD
+---
+[Previous](sdd-backstory)
+`,
+    date: "2025-10-14",
     readTime: "1 min read",
     category: "sdd",
     featured: false
-  },
-  {
-    id: "api-documentation-first",
-    title: "Why Your API Needs Documentation-First Development",
-    excerpt: "OpenAPI specifications aren't just nice-to-have documentation—they're the foundation of maintainable, scalable backend architecture.",
-    content: `API documentation shouldn't be an afterthought. When you write OpenAPI specifications before implementing endpoints, you create a contract that benefits every stakeholder in your project.
-
-## The Documentation-First Approach
-
-**1. Design the Contract**
-Start with OpenAPI specifications that define exactly what each endpoint does:
-* Request/response schemas
-* Error codes and messages  
-* Authentication requirements
-* Rate limiting policies
-
-**2. Generate Client SDKs**
-Use your specifications to automatically generate client libraries in multiple languages. This ensures consistency and reduces integration time.
-
-**3. Mock Services**
-Create mock servers from your specifications so frontend development can begin immediately, even before backend implementation.
-
-**4. Automated Testing**
-Generate test cases directly from your specifications to ensure your implementation matches your contract.
-
-## Real-World Benefits
-
-A recent client project used documentation-first development for a complex integration with 12 external services:
-
-* Integration time reduced from 6 weeks to 2 weeks
-* Zero contract-related bugs in production  
-* Frontend and backend development completed in parallel
-* Automated testing coverage of 100% for API contracts
-
-## Getting Started
-
-1. Choose an API specification format (OpenAPI 3.0 recommended)
-2. Write specifications for one endpoint
-3. Generate a mock server  
-4. Implement the endpoint to match the specification
-5. Use automated tools to verify contract compliance
-
-The investment in documentation-first development pays dividends in development speed, code quality, and team coordination.`,
-    date: "2024-03-05",
-    readTime: "7 min read",
-    category: "API Design",
-    featured: false
-  },
+  }
 ];

@@ -1,5 +1,4 @@
 import developerPhoto from '@/assets/developer-photo.png';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Code2, Database, Globe, Server } from 'lucide-react';
 
@@ -23,7 +22,11 @@ const About = () => {
     {
       category: "Architecture",
       icon: <Database className="h-6 w-6 text-primary" />,
-      technologies: ["Clean architecture", "REST APIs"]
+      technologies: [
+        "Feature-Sliced Design",
+        "Clean architecture",
+        "REST APIs"
+      ]
     },
     {
       category: "Development",
