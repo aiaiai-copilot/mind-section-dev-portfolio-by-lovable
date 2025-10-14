@@ -6,12 +6,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { blogPosts } from '@/data/blogPosts';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Blog = () => {
+  const [showAllPosts, setShowAllPosts] = useState(false);
   const categories = ["All", "Case Study", "Methodology", "API Design", "Frontend"];
   
   const featuredPosts = blogPosts.filter(post => post.featured);
-  const regularPosts = blogPosts.filter(post => !post.featured);
+  const allRegularPosts = blogPosts
+    .filter(post => !post.featured)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  
+  const regularPosts = showAllPosts ? allRegularPosts : allRegularPosts.slice(0, 3);
 
   return (
     <div className="min-h-screen py-20 px-4">
@@ -115,6 +121,19 @@ const Blog = () => {
               </Card>
             ))}
           </div>
+          
+          {allRegularPosts.length > 3 && (
+            <div className="mt-8 text-center">
+              <Button 
+                variant="outline" 
+                onClick={() => setShowAllPosts(!showAllPosts)}
+                className="group/btn"
+              >
+                {showAllPosts ? 'Show Less' : 'View All Articles'}
+                <ArrowRight className={`ml-2 h-4 w-4 transition-transform ${showAllPosts ? 'rotate-90' : ''}`} />
+              </Button>
+            </div>
+          )}
         </section>
 
         {/* Newsletter Signup */}
