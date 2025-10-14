@@ -114,11 +114,11 @@ const Contact = () => {
   ];
 
   const budgetRanges = [
-    "Under $10k",
-    "$10k - $25k",
-    "$25k - $50k", 
-    "$50k - $100k",
-    "$100k+",
+    "Under $1k",
+    "$1k - $2k",
+    "$2k - $5k", 
+    "$5k - $10k",
+    "$10k+",
     "Not sure yet"
   ];
 
