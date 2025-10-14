@@ -11,7 +11,7 @@
 - Подзаголовок: `"Reliable code that grows with your business"` и `"Easy to develop, extend, and maintain by teams"`
 - Блок специализации:
   - Заголовок блока: `"Specialization"`
-  - Подзаголовок: `"Specification Driven Development"`
+  - Подзаголовок: `"Spec-Driven Development"`
   - Описание: текст начинается с "Creating web applications focused on long-term development..."
 - Кнопка: `"Start Your Project"`
 

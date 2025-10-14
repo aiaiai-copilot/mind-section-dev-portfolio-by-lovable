@@ -187,7 +187,7 @@ const Portfolio = () => {
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Real-world applications built with maintainable architecture, comprehensive documentation, 
-            and specification-driven development practices.
+            and Spec-Driven Development practices.
           </p>
         </div>
 

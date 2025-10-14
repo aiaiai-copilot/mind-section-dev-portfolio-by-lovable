@@ -63,7 +63,7 @@ Ultimately, people wanted to see something more serious than mere **"wow effects
 `,
     date: "2025-10-14",
     readTime: "1 min read",
-    category: "sdd",
+    category: "SDD",
     featured: true
   },
   {
@@ -76,7 +76,7 @@ Ultimately, people wanted to see something more serious than mere **"wow effects
 `,
     date: "2025-10-14",
     readTime: "1 min read",
-    category: "sdd",
+    category: "SDD",
     featured: false
   },
   {

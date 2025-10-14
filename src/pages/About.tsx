@@ -112,7 +112,7 @@ const About = () => {
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Architected and developed 15+ web applications with 90%+ test coverage</li>
                   <li>• Reduced onboarding time for new developers from 3 weeks to 5 days through comprehensive documentation</li>
-                  <li>• Implemented specification-driven development processes that decreased bug reports by 60%</li>
+                  <li>• Implemented Spec-Driven development processes that decreased bug reports by 60%</li>
                   <li>• Mentored junior developers on code quality, testing practices, and documentation standards</li>
                 </ul>
               </div>

@@ -10,7 +10,7 @@ const Home = () => {
       role: "CTO, TechStart Inc."
     },
     {
-      quote: "Best investment we made. The specification-driven approach caught potential issues before development, saving us months of refactoring.",
+      quote: "Best investment we made. The SDD approach caught potential issues before development, saving us months of refactoring.",
       author: "Marcus Rodriguez",
       role: "Lead Developer, Scale Systems"
     }
