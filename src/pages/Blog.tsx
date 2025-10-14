@@ -5,11 +5,18 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { blogPosts } from '@/data/blogPosts';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 const Blog = () => {
+  const [searchParams] = useSearchParams();
   const [showAllPosts, setShowAllPosts] = useState(false);
+
+  useEffect(() => {
+    if (searchParams.get('showAll') === 'true') {
+      setShowAllPosts(true);
+    }
+  }, [searchParams]);
   const categories = ["All", "Case Study", "Methodology", "API Design", "Frontend"];
   
   const featuredPosts = blogPosts.filter(post => post.featured);

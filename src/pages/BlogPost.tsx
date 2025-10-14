@@ -94,7 +94,7 @@ const BlogPost = () => {
 
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-border">
-          <Link to="/blog">
+          <Link to="/blog?showAll=true">
             <Button variant="outline" className="group">
               <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
               Back to All Articles
