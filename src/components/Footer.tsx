@@ -1,6 +1,5 @@
 import { Github, Mail } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import { toast } from 'sonner';
 
 const Footer = () => {
   const location = useLocation();
@@ -24,7 +23,7 @@ const Footer = () => {
               <li>Web Application Architecture</li>
               <li>Full-Stack Development</li>
               <li>Technical Documentation</li>
-              <li>Code Quality Consulting</li>
+              <li>Spec-Driven Development Consulting</li>
             </ul>
           </div>
 

@@ -109,7 +109,7 @@ const Contact = () => {
     "New Web Application",
     "API Development",
     "Technical Documentation",
-    "Architecture Consulting",
+    "Spec-Driven Development Consulting",
     "Other"
   ];
 
