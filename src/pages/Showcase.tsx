@@ -9,7 +9,7 @@ const Showcase = () => {
       title: 'Portfolio Website',
       description: 'Modern portfolio site with animated sections and project showcase',
       category: 'Landing & Portfolio',
-      image: 'https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=800&auto=format&fit=crop',
+      image: '/placeholder.svg',
       features: ['Responsive Design', 'Animation Effects', 'Contact Form', 'SEO Optimized'],
       technologies: ['React', 'TypeScript', 'Tailwind CSS'],
       demo: '#',
@@ -18,7 +18,7 @@ const Showcase = () => {
       title: 'Blog Platform',
       description: 'Content management system with markdown support and user authentication',
       category: 'Content Platform',
-      image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&auto=format&fit=crop',
+      image: '/placeholder.svg',
       features: ['Markdown Editor', 'User Auth', 'Comments', 'Search & Tags'],
       technologies: ['React', 'Supabase', 'React Query'],
       demo: '#',
@@ -27,7 +27,7 @@ const Showcase = () => {
       title: 'SaaS Dashboard',
       description: 'Multi-user application with user roles and real-time data',
       category: 'Multi-user SaaS',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop',
+      image: '/placeholder.svg',
       features: ['User Roles', 'Real-time Updates', 'Analytics', 'Team Management'],
       technologies: ['React', 'Supabase', 'Recharts'],
       demo: '#',
@@ -36,7 +36,7 @@ const Showcase = () => {
       title: 'E-commerce Store',
       description: 'Online store with product catalog, cart and payment integration',
       category: 'E-commerce',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&auto=format&fit=crop',
+      image: '/placeholder.svg',
       features: ['Product Catalog', 'Shopping Cart', 'Payment Gateway', 'Order Management'],
       technologies: ['React', 'Stripe', 'Supabase'],
       demo: '#',
@@ -45,7 +45,7 @@ const Showcase = () => {
       title: 'Admin Panel',
       description: 'Comprehensive admin interface for managing users and content',
       category: 'Admin Dashboard',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop',
+      image: '/placeholder.svg',
       features: ['User Management', 'Data Tables', 'Role Permissions', 'Activity Logs'],
       technologies: ['React', 'TypeScript', 'Supabase'],
       demo: '#',
@@ -54,7 +54,7 @@ const Showcase = () => {
       title: 'Booking System',
       description: 'Appointment scheduling with calendar integration and notifications',
       category: 'Business App',
-      image: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&auto=format&fit=crop',
+      image: '/placeholder.svg',
       features: ['Calendar View', 'Email Notifications', 'Payment Integration', 'Booking Management'],
       technologies: ['React', 'Supabase', 'Date-fns'],
       demo: '#',
@@ -68,7 +68,7 @@ const Showcase = () => {
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-4xl font-bold mb-4">Showcase</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Примеры типовых приложений, которые я могу разработать для вас
+            Examples of typical applications I can develop for you
           </p>
         </div>
 
@@ -141,14 +141,14 @@ const Showcase = () => {
         <div className="mt-16 text-center animate-fade-in">
           <Card className="max-w-2xl mx-auto">
             <CardHeader>
-              <CardTitle>Готовы начать свой проект?</CardTitle>
+              <CardTitle>Ready to start your project?</CardTitle>
               <CardDescription>
-                Свяжитесь со мной, чтобы обсудить ваши требования и получить индивидуальное решение
+                Contact me to discuss your requirements and get a custom solution
               </CardDescription>
             </CardHeader>
             <CardContent>
               <Button size="lg" asChild>
-                <a href="/contact">Связаться со мной</a>
+                <a href="/contact">Contact Me</a>
               </Button>
             </CardContent>
           </Card>
