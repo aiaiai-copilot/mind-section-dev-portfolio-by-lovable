@@ -129,7 +129,7 @@ const Showcase = () => {
                 <Button variant="outline" className="w-full" asChild>
                   <a href={project.demo} className="flex items-center justify-center gap-2">
                     <ExternalLink className="h-4 w-4" />
-                    View Details
+                    View Live Demo
                   </a>
                 </Button>
               </CardContent>
