@@ -8,44 +8,44 @@ All colors MUST be HSL. Professional blue theme for maintainable development foc
 
 @layer base {
   :root {
-    /* Core Color Palette - Deep Sea & Gold Theme */
-    --background: 177 48% 18%; /* #174441 - deep sea teal */
-    --foreground: 51 100% 50%; /* #ffd700 - gold text */
+    /* Core Color Palette - Light Sea & Deep Accents */
+    --background: 177 45% 88%; /* light sea teal background */
+    --foreground: 177 48% 18%; /* dark sea text */
 
-    --card: 177 48% 22%; /* slightly lighter than background */
-    --card-foreground: 51 100% 50%;
+    --card: 0 0% 100%; /* white cards */
+    --card-foreground: 177 48% 18%;
 
-    --popover: 177 48% 22%;
-    --popover-foreground: 51 100% 50%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 177 48% 18%;
 
-    --primary: 51 100% 50%; /* #ffd700 - gold as primary */
-    --primary-foreground: 177 48% 18%;
+    --primary: 177 48% 18%; /* #174441 - deep sea for buttons */
+    --primary-foreground: 51 100% 50%; /* #ffd700 - gold text on buttons */
 
-    --secondary: 177 48% 28%; /* lighter sea teal */
-    --secondary-foreground: 51 100% 50%;
+    --secondary: 177 30% 85%; /* light sea secondary */
+    --secondary-foreground: 177 48% 18%;
 
-    --muted: 177 30% 35%;
-    --muted-foreground: 51 80% 60%; /* muted gold */
+    --muted: 177 30% 85%;
+    --muted-foreground: 177 30% 40%; /* muted sea text */
 
-    --accent: 51 100% 50%;
-    --accent-foreground: 177 48% 18%;
+    --accent: 177 48% 18%;
+    --accent-foreground: 51 100% 50%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 51 100% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 177 40% 30%;
-    --input: 177 40% 30%;
-    --ring: 51 100% 50%;
+    --border: 177 30% 75%;
+    --input: 177 30% 75%;
+    --ring: 177 48% 18%;
 
     --radius: 0.75rem;
 
-    /* Deep Sea Gradients */
+    /* Sea Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(177 48% 18%), hsl(177 55% 25%));
-    --gradient-subtle: linear-gradient(180deg, hsl(177 48% 20%), hsl(177 48% 18%));
+    --gradient-subtle: linear-gradient(180deg, hsl(177 45% 92%), hsl(177 45% 88%));
     
-    /* Gold Shadows */
-    --shadow-elegant: 0 20px 60px -15px hsl(51 100% 50% / 0.2);
-    --shadow-card: 0 4px 20px -2px hsl(51 100% 50% / 0.1);
+    /* Sea Shadows */
+    --shadow-elegant: 0 20px 60px -15px hsl(177 48% 18% / 0.15);
+    --shadow-card: 0 4px 20px -2px hsl(177 48% 18% / 0.08);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
