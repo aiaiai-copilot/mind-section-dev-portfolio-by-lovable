@@ -62,18 +62,11 @@ const Showcase = () => {
                   {/* Features */}
                   <div className="mb-4 h-20 flex-shrink-0">
                     <h4 className="text-sm font-semibold mb-2">Key Features:</h4>
-                    <div className="flex flex-wrap gap-2 h-12 overflow-hidden">
+                     <div className="flex flex-wrap gap-2 h-12 overflow-hidden">
                       {project.features.map((feature, idx) => (
-                        <Tooltip key={idx}>
-                          <TooltipTrigger asChild>
-                            <Badge variant="outline" className="text-xs truncate max-w-[120px]">
-                              {feature}
-                            </Badge>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p>{feature}</p>
-                          </TooltipContent>
-                        </Tooltip>
+                        <Badge key={idx} variant="outline" className="text-xs truncate max-w-[120px]" title={feature}>
+                          {feature}
+                        </Badge>
                       ))}
                     </div>
                   </div>
@@ -84,18 +77,11 @@ const Showcase = () => {
                       <Code className="h-4 w-4" />
                       Technologies:
                     </h4>
-                    <div className="flex flex-wrap gap-2 h-12 overflow-hidden">
+                     <div className="flex flex-wrap gap-2 h-12 overflow-hidden">
                       {project.technologies.map((tech, idx) => (
-                        <Tooltip key={idx}>
-                          <TooltipTrigger asChild>
-                            <Badge variant="default" className="text-xs truncate max-w-[120px]">
-                              {tech}
-                            </Badge>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p>{tech}</p>
-                          </TooltipContent>
-                        </Tooltip>
+                        <Badge key={idx} variant="default" className="text-xs truncate max-w-[120px]" title={tech}>
+                          {tech}
+                        </Badge>
                       ))}
                     </div>
                   </div>
