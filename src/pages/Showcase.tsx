@@ -60,27 +60,12 @@ const Showcase = () => {
 
                 <CardContent className="flex-1 flex flex-col">
                   {/* Features */}
-                  <div className="mb-4 h-20 flex-shrink-0">
+                  <div className="mb-4 flex-grow">
                     <h4 className="text-sm font-semibold mb-2">Key Features:</h4>
-                     <div className="flex flex-wrap gap-2 h-12 overflow-hidden">
+                    <div className="flex flex-wrap gap-2">
                       {project.features.map((feature, idx) => (
-                        <Badge key={idx} variant="outline" className="text-xs truncate max-w-[120px]" title={feature}>
+                        <Badge key={idx} variant="outline" className="text-xs" title={feature}>
                           {feature}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Technologies */}
-                  <div className="mb-4 h-20 flex-shrink-0">
-                    <h4 className="text-sm font-semibold mb-2 flex items-center gap-1">
-                      <Code className="h-4 w-4" />
-                      Technologies:
-                    </h4>
-                     <div className="flex flex-wrap gap-2 h-12 overflow-hidden">
-                      {project.technologies.map((tech, idx) => (
-                        <Badge key={idx} variant="default" className="text-xs truncate max-w-[120px]" title={tech}>
-                          {tech}
                         </Badge>
                       ))}
                     </div>
