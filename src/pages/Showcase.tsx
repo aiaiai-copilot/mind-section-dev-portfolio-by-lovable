@@ -1,6 +1,7 @@
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Code, ExternalLink } from 'lucide-react';
 import { showcaseProjects } from '@/data/showcaseProjects';
 
@@ -18,69 +19,101 @@ const Showcase = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {showcaseProjects.map((project, index) => (
-            <Card 
-              key={index} 
-              className="overflow-hidden hover-scale animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              {/* Project Image */}
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-
-              <CardHeader>
-                <div className="flex items-start justify-between mb-2">
-                  <Badge variant="secondary">{project.category}</Badge>
+        <TooltipProvider>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {showcaseProjects.map((project, index) => (
+              <Card 
+                key={index} 
+                className="overflow-hidden hover-scale animate-fade-in flex flex-col h-full"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {/* Project Image */}
+                <div className="aspect-video overflow-hidden flex-shrink-0">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  />
                 </div>
-                <CardTitle className="text-xl mb-2">{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
 
-              <CardContent>
-                {/* Features */}
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold mb-2">Key Features:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.features.map((feature, idx) => (
-                      <Badge key={idx} variant="outline" className="text-xs">
-                        {feature}
-                      </Badge>
-                    ))}
+                <CardHeader className="flex-shrink-0">
+                  <div className="flex items-start justify-between mb-2">
+                    <Badge variant="secondary">{project.category}</Badge>
                   </div>
-                </div>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <CardTitle className="text-xl mb-2 line-clamp-1">{project.title}</CardTitle>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{project.title}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <CardDescription className="line-clamp-2">{project.description}</CardDescription>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="max-w-xs">{project.description}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </CardHeader>
 
-                {/* Technologies */}
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold mb-2 flex items-center gap-1">
-                    <Code className="h-4 w-4" />
-                    Technologies:
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, idx) => (
-                      <Badge key={idx} variant="default" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
+                <CardContent className="flex-1 flex flex-col">
+                  {/* Features */}
+                  <div className="mb-4 h-20 flex-shrink-0">
+                    <h4 className="text-sm font-semibold mb-2">Key Features:</h4>
+                    <div className="flex flex-wrap gap-2 h-12 overflow-hidden">
+                      {project.features.map((feature, idx) => (
+                        <Tooltip key={idx}>
+                          <TooltipTrigger asChild>
+                            <Badge variant="outline" className="text-xs truncate max-w-[120px]">
+                              {feature}
+                            </Badge>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>{feature}</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      ))}
+                    </div>
                   </div>
-                </div>
 
-                {/* Demo Button */}
-                <Button variant="outline" className="w-full" asChild>
-                  <a href={`/showcase/view/${project.id}`} className="flex items-center justify-center gap-2">
-                    <ExternalLink className="h-4 w-4" />
-                    View Live Demo
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+                  {/* Technologies */}
+                  <div className="mb-4 h-20 flex-shrink-0">
+                    <h4 className="text-sm font-semibold mb-2 flex items-center gap-1">
+                      <Code className="h-4 w-4" />
+                      Technologies:
+                    </h4>
+                    <div className="flex flex-wrap gap-2 h-12 overflow-hidden">
+                      {project.technologies.map((tech, idx) => (
+                        <Tooltip key={idx}>
+                          <TooltipTrigger asChild>
+                            <Badge variant="default" className="text-xs truncate max-w-[120px]">
+                              {tech}
+                            </Badge>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>{tech}</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Demo Button */}
+                  <div className="mt-auto">
+                    <Button variant="outline" className="w-full" asChild>
+                      <a href={`/showcase/view/${project.id}`} className="flex items-center justify-center gap-2">
+                        <ExternalLink className="h-4 w-4" />
+                        View Live Demo
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </TooltipProvider>
 
         {/* CTA Section */}
         <div className="mt-16 text-center animate-fade-in">
