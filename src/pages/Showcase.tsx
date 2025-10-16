@@ -12,7 +12,7 @@ const Showcase = () => {
       image: '/placeholder.svg',
       features: ['Security', 'Authentication', 'OAuth'],
       technologies: ['OAuth', 'React', 'TypeScript'],
-      demo: '/showcase/oauth/simplest/',
+      demo: '/showcase/view/oauth-simplest',
     },
     {
       title: 'Blog Platform',
@@ -21,7 +21,7 @@ const Showcase = () => {
       image: '/placeholder.svg',
       features: ['Markdown Editor', 'User Auth', 'Comments', 'Search & Tags'],
       technologies: ['React', 'Supabase', 'React Query'],
-      demo: '/dev/blog',
+      demo: '/showcase/view/blog',
     },
     {
       title: 'SaaS Dashboard',
@@ -30,7 +30,7 @@ const Showcase = () => {
       image: '/placeholder.svg',
       features: ['User Roles', 'Real-time Updates', 'Analytics', 'Team Management'],
       technologies: ['React', 'Supabase', 'Recharts'],
-      demo: '/dev/saas-dashboard',
+      demo: '/showcase/view/saas-dashboard',
     },
     {
       title: 'E-commerce Store',
@@ -39,7 +39,7 @@ const Showcase = () => {
       image: '/placeholder.svg',
       features: ['Product Catalog', 'Shopping Cart', 'Payment Gateway', 'Order Management'],
       technologies: ['React', 'Stripe', 'Supabase'],
-      demo: '/dev/ecommerce',
+      demo: '/showcase/view/ecommerce',
     },
     {
       title: 'Admin Panel',
@@ -48,7 +48,7 @@ const Showcase = () => {
       image: '/placeholder.svg',
       features: ['User Management', 'Data Tables', 'Role Permissions', 'Activity Logs'],
       technologies: ['React', 'TypeScript', 'Supabase'],
-      demo: '/dev/admin-panel',
+      demo: '/showcase/view/admin-panel',
     },
     {
       title: 'Booking System',
@@ -57,7 +57,7 @@ const Showcase = () => {
       image: '/placeholder.svg',
       features: ['Calendar View', 'Email Notifications', 'Payment Integration', 'Booking Management'],
       technologies: ['React', 'Supabase', 'Date-fns'],
-      demo: '/dev/booking',
+      demo: '/showcase/view/booking',
     },
   ];
 
