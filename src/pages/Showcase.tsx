@@ -1,18 +1,18 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Code } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Code, ExternalLink } from 'lucide-react';
 
 const Showcase = () => {
   const projects = [
     {
-      title: 'Portfolio Website',
-      description: 'Modern portfolio site with animated sections and project showcase',
-      category: 'Landing & Portfolio',
+      title: 'Simplest OAuth',
+      description: 'Simplest OAuth',
+      category: 'OAuth authentication',
       image: '/placeholder.svg',
-      features: ['Responsive Design', 'Animation Effects', 'Contact Form', 'SEO Optimized'],
-      technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-      demo: '/dev/portfolio',
+      features: ['Security', 'Authentication', 'OAuth'],
+      technologies: ['OAuth', 'React', 'TypeScript'],
+      demo: '/showcase/oauth/simplest/',
     },
     {
       title: 'Blog Platform',
