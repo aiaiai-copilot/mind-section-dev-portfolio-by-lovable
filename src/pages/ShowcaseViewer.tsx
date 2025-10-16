@@ -10,9 +10,12 @@ const ShowcaseViewer = () => {
   // Find project by ID
   const project = showcaseProjects.find(p => p.id === id);
   
-  // Build full URL: use previewUrl if available, otherwise build dynamically
+  // Build full URL: on production domain use local path, otherwise use previewUrl
+  const isProductionDomain = window.location.hostname === 'alexanderlapygin.com';
   const showcaseUrl = project 
-    ? (project.previewUrl || `${import.meta.env.VITE_BASE_URL || window.location.origin}${project.showcasePath}`)
+    ? (isProductionDomain 
+        ? `${window.location.origin}${project.showcasePath}`
+        : (project.previewUrl || `${import.meta.env.VITE_BASE_URL || window.location.origin}${project.showcasePath}`))
     : null;
 
   if (!showcaseUrl) {

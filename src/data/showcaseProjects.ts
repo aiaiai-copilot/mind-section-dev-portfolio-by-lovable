@@ -20,6 +20,7 @@ export const showcaseProjects: ShowcaseProject[] = [
     features: ["Security", "Authentication", "OAuth"],
     technologies: ["OAuth", "React", "TypeScript"],
     showcasePath: "/showcase/oauth/simplest/",
+    previewUrl: "https://preview--showcase-oauth-simplest-web.lovable.app/",
   },
   {
     id: "blog",
