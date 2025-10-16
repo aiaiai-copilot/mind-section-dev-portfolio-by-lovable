@@ -70,16 +70,6 @@ const Showcase = () => {
                       ))}
                     </div>
                   </div>
-
-                  {/* Demo Button */}
-                  <div className="mt-auto">
-                    <Button variant="outline" className="w-full" asChild>
-                      <a href={`/showcase/view/${project.id}`} className="flex items-center justify-center gap-2">
-                        <ExternalLink className="h-4 w-4" />
-                        View Live Demo
-                      </a>
-                    </Button>
-                  </div>
                 </CardContent>
               </Card>
             ))}
