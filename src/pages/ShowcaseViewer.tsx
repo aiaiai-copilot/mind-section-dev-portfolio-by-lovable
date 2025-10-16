@@ -1,23 +1,18 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { showcaseProjects } from '@/data/showcaseProjects';
 
 const ShowcaseViewer = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
 
-  // Map showcase IDs to their actual URLs
-  const showcaseUrls: Record<string, string> = {
-    'oauth-simplest': 'https://alexanderlapygin.com/showcase/oauth/simplest/',
-    'portfolio': '/dev/portfolio',
-    'blog': '/dev/blog',
-    'saas-dashboard': '/dev/saas-dashboard',
-    'ecommerce': '/dev/ecommerce',
-    'admin-panel': '/dev/admin-panel',
-    'booking': '/dev/booking',
-  };
-
-  const showcaseUrl = id ? showcaseUrls[id] : null;
+  // Find project by ID
+  const project = showcaseProjects.find(p => p.id === id);
+  
+  // Build full URL dynamically
+  const baseUrl = import.meta.env.VITE_BASE_URL || window.location.origin;
+  const showcaseUrl = project ? `${baseUrl}${project.showcasePath}` : null;
 
   if (!showcaseUrl) {
     return (

@@ -2,64 +2,9 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Code, ExternalLink } from 'lucide-react';
+import { showcaseProjects } from '@/data/showcaseProjects';
 
 const Showcase = () => {
-  const projects = [
-    {
-      title: 'Simplest OAuth',
-      description: 'Simplest OAuth',
-      category: 'OAuth authentication',
-      image: '/placeholder.svg',
-      features: ['Security', 'Authentication', 'OAuth'],
-      technologies: ['OAuth', 'React', 'TypeScript'],
-      demo: '/showcase/view/oauth-simplest',
-    },
-    {
-      title: 'Blog Platform',
-      description: 'Content management system with markdown support and user authentication',
-      category: 'Content Platform',
-      image: '/placeholder.svg',
-      features: ['Markdown Editor', 'User Auth', 'Comments', 'Search & Tags'],
-      technologies: ['React', 'Supabase', 'React Query'],
-      demo: '/showcase/view/blog',
-    },
-    {
-      title: 'SaaS Dashboard',
-      description: 'Multi-user application with user roles and real-time data',
-      category: 'Multi-user SaaS',
-      image: '/placeholder.svg',
-      features: ['User Roles', 'Real-time Updates', 'Analytics', 'Team Management'],
-      technologies: ['React', 'Supabase', 'Recharts'],
-      demo: '/showcase/view/saas-dashboard',
-    },
-    {
-      title: 'E-commerce Store',
-      description: 'Online store with product catalog, cart and payment integration',
-      category: 'E-commerce',
-      image: '/placeholder.svg',
-      features: ['Product Catalog', 'Shopping Cart', 'Payment Gateway', 'Order Management'],
-      technologies: ['React', 'Stripe', 'Supabase'],
-      demo: '/showcase/view/ecommerce',
-    },
-    {
-      title: 'Admin Panel',
-      description: 'Comprehensive admin interface for managing users and content',
-      category: 'Admin Dashboard',
-      image: '/placeholder.svg',
-      features: ['User Management', 'Data Tables', 'Role Permissions', 'Activity Logs'],
-      technologies: ['React', 'TypeScript', 'Supabase'],
-      demo: '/showcase/view/admin-panel',
-    },
-    {
-      title: 'Booking System',
-      description: 'Appointment scheduling with calendar integration and notifications',
-      category: 'Business App',
-      image: '/placeholder.svg',
-      features: ['Calendar View', 'Email Notifications', 'Payment Integration', 'Booking Management'],
-      technologies: ['React', 'Supabase', 'Date-fns'],
-      demo: '/showcase/view/booking',
-    },
-  ];
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -74,7 +19,7 @@ const Showcase = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
+          {showcaseProjects.map((project, index) => (
             <Card 
               key={index} 
               className="overflow-hidden hover-scale animate-fade-in"
@@ -127,7 +72,7 @@ const Showcase = () => {
 
                 {/* Demo Button */}
                 <Button variant="outline" className="w-full" asChild>
-                  <a href={project.demo} className="flex items-center justify-center gap-2">
+                  <a href={`/showcase/view/${project.id}`} className="flex items-center justify-center gap-2">
                     <ExternalLink className="h-4 w-4" />
                     View Live Demo
                   </a>
