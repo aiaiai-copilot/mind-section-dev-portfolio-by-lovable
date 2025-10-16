@@ -16,7 +16,7 @@ export const showcaseProjects: ShowcaseProject[] = [
     title: "Simplest OAuth",
     description: "Simplest OAuth",
     category: "OAuth authentication",
-    image: "/placeholder.svg",
+    image: new URL("@/assets/oauth-simplest.jpg", import.meta.url).href,
     features: ["Security", "Authentication", "OAuth"],
     technologies: ["OAuth", "React", "TypeScript"],
     showcasePath: "/showcase/oauth/simplest/",
