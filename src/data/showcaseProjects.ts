@@ -7,6 +7,7 @@ export interface ShowcaseProject {
   features: string[];
   technologies: string[];
   showcasePath: string;
+  previewUrl?: string;
 }
 
 export const showcaseProjects: ShowcaseProject[] = [
@@ -19,6 +20,7 @@ export const showcaseProjects: ShowcaseProject[] = [
     features: ['Security', 'Authentication', 'OAuth'],
     technologies: ['OAuth', 'React', 'TypeScript'],
     showcasePath: '/showcase/oauth/simplest/',
+    previewUrl: 'https://preview--showcase-oauth-simplest-web.lovable.app/',
   },
   {
     id: 'blog',

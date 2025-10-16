@@ -10,9 +10,10 @@ const ShowcaseViewer = () => {
   // Find project by ID
   const project = showcaseProjects.find(p => p.id === id);
   
-  // Build full URL dynamically
-  const baseUrl = import.meta.env.VITE_BASE_URL || window.location.origin;
-  const showcaseUrl = project ? `${baseUrl}${project.showcasePath}` : null;
+  // Build full URL: use previewUrl if available, otherwise build dynamically
+  const showcaseUrl = project 
+    ? (project.previewUrl || `${import.meta.env.VITE_BASE_URL || window.location.origin}${project.showcasePath}`)
+    : null;
 
   if (!showcaseUrl) {
     return (
