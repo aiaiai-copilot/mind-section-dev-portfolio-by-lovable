@@ -2,7 +2,6 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { Code, ExternalLink } from 'lucide-react';
 import { showcaseProjects } from '@/data/showcaseProjects';
 
 const Showcase = () => {
@@ -14,7 +13,7 @@ const Showcase = () => {
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-4xl font-bold mb-4">Showcase</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Examples of typical applications I can develop for you
+            Solutions I can build to meet your needs
           </p>
         </div>
 

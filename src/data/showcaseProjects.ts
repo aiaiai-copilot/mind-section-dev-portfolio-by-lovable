@@ -14,7 +14,7 @@ export const showcaseProjects: ShowcaseProject[] = [
   {
     id: "oauth-simplest",
     title: "Simplest OAuth",
-    description: "Simplest OAuth",
+    description: "A demonstration of client-side only authentication, allowing users to sign in with their existing accounts from major providers like Google or GitHub without needing a backend.",
     category: "OAuth authentication",
     image: new URL("@/assets/oauth-simplest.jpg", import.meta.url).href,
     features: ["Security", "Authentication", "OAuth"],
@@ -26,7 +26,7 @@ export const showcaseProjects: ShowcaseProject[] = [
     id: "blog",
     title: "Blog Platform",
     description:
-      "Content management system with markdown support and user authentication | Content management system with markdown support and user authentication | Content management system with markdown support and user authentication | Content management system with markdown support and user authentication | Content management system with markdown support and user authentication | |",
+      "Content management system with markdown support and user authentication",
     category: "Content Platform",
     image: new URL("@/assets/view-live-demo-placeholder.jpg", import.meta.url).href,
     features: ["Markdown Editor", "User Auth", "Comments", "Search & Tags"],
