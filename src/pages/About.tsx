@@ -38,6 +38,7 @@ const About = () => {
         "API-First Approach",
         "Docker",
         "Git",
+        "CI/CD",
         "Documentation"
       , "Code Review"
       ]
