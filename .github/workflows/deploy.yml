@@ -37,4 +37,4 @@ jobs:
 
       - name: Deploy to Beget
         run: |
-          scp -i ~/.ssh/id_ed25519 -r dist/* root@84.54.29.190:/var/www/alexanderlapygin.com/html/showcase/oauth/simplest
+          scp -i ~/.ssh/id_ed25519 -r dist/* root@84.54.29.190:/var/www/alexanderlapygin.com/html
