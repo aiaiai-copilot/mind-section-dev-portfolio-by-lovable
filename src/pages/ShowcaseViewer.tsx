@@ -10,19 +10,29 @@ const ShowcaseViewer = () => {
   // Find project by ID
   const project = showcaseProjects.find(p => p.id === id);
   
-  // Build full URL: on production domain use local path, otherwise use previewUrl
-  const isProductionDomain = window.location.hostname === 'alexanderlapygin.com';
-  const showcaseUrl = project 
-    ? (isProductionDomain 
-        ? `${window.location.origin}${project.showcasePath}`
-        : (project.previewUrl || `${import.meta.env.VITE_BASE_URL || window.location.origin}${project.showcasePath}`))
-    : null;
+  // Use previewUrl if available, otherwise show coming soon message
+  const showcaseUrl = project?.previewUrl || null;
 
-  if (!showcaseUrl) {
+  if (!project) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Showcase not found</h1>
+          <Button onClick={() => navigate('/showcase')}>
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Showcase
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!showcaseUrl) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center space-y-4">
+          <h1 className="text-2xl font-bold">{project.title}</h1>
+          <p className="text-muted-foreground">Coming soon...</p>
           <Button onClick={() => navigate('/showcase')}>
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Showcase
