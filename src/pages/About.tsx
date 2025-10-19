@@ -14,6 +14,7 @@ const About = () => {
       icon: <Server className="h-6 w-6 text-primary" />,
       technologies: [
         "Node.js",
+        "TypeScript",
         "Java",
         "PostgreSQL",
         "Redis"
