@@ -38,7 +38,7 @@ const Home = () => {
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Building web applications designed to last — with robust architecture, comprehensive documentation,
               thorough contract testing, and maintainable code that enables rapid onboarding for developers
-              and AI-assisted tools alike!!!
+              and AI-assisted tools alike
             </p>
           </div>
 
