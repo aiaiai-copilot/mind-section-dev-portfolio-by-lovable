@@ -13,7 +13,7 @@ export interface ShowcaseProject {
 export const showcaseProjects: ShowcaseProject[] = [
   {
     id: "oauth-simplest",
-    title: "Simplest OAuth",
+    title: "Simplest authentication",
     description: "A demonstration of client-side only authentication, allowing users to sign in with their existing accounts from major providers like Google or GitHub without needing a backend.",
     category: "OAuth authentication",
     image: new URL("@/assets/oauth-simplest.jpg", import.meta.url).href,
