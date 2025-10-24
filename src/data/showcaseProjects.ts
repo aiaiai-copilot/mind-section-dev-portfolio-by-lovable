@@ -21,8 +21,8 @@ export const showcaseProjects: ShowcaseProject[] = [
     showcasePath: "/showcase/oauth/simplest/",
   },
   {
-    id: "blog",
-    title: "Blog Platform",
+    id: "telegram-bot-messaging",
+    title: "Telegram Bot messaging",
     description:
       "Content management system with markdown support and user authentication",
     category: "Content Platform",
