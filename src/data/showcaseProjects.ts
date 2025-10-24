@@ -30,8 +30,8 @@ export const showcaseProjects: ShowcaseProject[] = [
     category: "Content Platform",
     image: new URL("@/assets/view-live-demo-placeholder.jpg", import.meta.url).href,
     features: ["Markdown Editor", "User Auth", "Comments", "Search & Tags"],
-    technologies: ["React", "Supabase", "React Query"],
-    showcasePath: "/dev/blog",
+    technologies: ["Telegram", "Bot", "Serverless"],
+    showcasePath: "/showcase/telegram-bot/messaging/",
   },
   {
     id: "saas-dashboard",
