@@ -1,14 +1,14 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { showcaseProjects } from '@/data/showcaseProjects';
 
 const ShowcaseViewer = () => {
-  const { id } = useParams<{ id: string }>();
+  const location = useLocation();
   const navigate = useNavigate();
 
-  // Find project by ID
-  const project = showcaseProjects.find(p => p.id === id);
+  // Find project by showcasePath
+  const project = showcaseProjects.find(p => p.showcasePath === location.pathname);
   
   // Use showcasePath to construct production URL
   const showcaseUrl = project?.showcasePath 
