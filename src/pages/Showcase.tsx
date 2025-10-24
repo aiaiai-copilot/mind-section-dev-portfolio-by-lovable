@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { showcaseProjects } from '@/data/showcaseProjects';
+import { Link } from 'react-router-dom';
 
 const Showcase = () => {
 
@@ -27,13 +28,13 @@ const Showcase = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Project Image */}
-                <a href={project.showcasePath} className="aspect-video overflow-hidden flex-shrink-0 cursor-pointer">
+                <Link to={project.showcasePath} className="aspect-video overflow-hidden flex-shrink-0 cursor-pointer">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                   />
-                </a>
+                </Link>
 
                 <CardHeader className="flex-shrink-0">
                   <div className="flex items-start justify-between mb-2">
