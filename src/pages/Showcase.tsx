@@ -27,7 +27,7 @@ const Showcase = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Project Image */}
-                <a href={`/showcase/view/${project.id}`} className="aspect-video overflow-hidden flex-shrink-0 cursor-pointer">
+                <a href={project.showcasePath} className="aspect-video overflow-hidden flex-shrink-0 cursor-pointer">
                   <img
                     src={project.image}
                     alt={project.title}
