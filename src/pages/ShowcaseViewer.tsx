@@ -10,8 +10,10 @@ const ShowcaseViewer = () => {
   // Find project by ID
   const project = showcaseProjects.find(p => p.id === id);
   
-  // Use previewUrl if available, otherwise show coming soon message
-  const showcaseUrl = project?.previewUrl || null;
+  // Use showcasePath to construct production URL
+  const showcaseUrl = project?.showcasePath 
+    ? `${window.location.origin}${project.showcasePath}`
+    : null;
 
   if (!project) {
     return (
