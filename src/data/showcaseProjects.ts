@@ -27,7 +27,7 @@ export const showcaseProjects: ShowcaseProject[] = [
       "Instant sending of data from a web form to a Telegram channel",
     category: "Telegram Bot",
     image: new URL("@/assets/telegram-bot-messaging.png", import.meta.url).href,
-    features: ["Telegram Bot", "Integration", "Sending messages"],
+    features: ["Telegram Bot", "Sending messages", "Integration"],
     technologies: ["Telegram", "Web", "Serverless"],
     showcasePath: "/showcase/telegram-bot/messaging/",
   },
