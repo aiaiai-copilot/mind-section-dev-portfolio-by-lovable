@@ -34,15 +34,18 @@ const About = () => {
       category: "Development",
       icon: <Code2 className="h-6 w-6 text-primary" />,
       technologies: [
-        "AI Tools(Claude Code, Lovable, etc)",
         "Spec-Driven Development",
         "Test-Driven Development",
         "API-First Approach",
         "Docker",
         "Git",
         "CI/CD",
-        "Documentation"
-      , "Code Review"
+        "Documentation",
+        "Code Review",
+        "AI Tools:",
+        "\u00A0\u00A0• Claude Code,",
+        "\u00A0\u00A0• Lovable,",
+        "\u00A0\u00A0• etc",
       ]
     }
   ];
