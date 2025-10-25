@@ -26,7 +26,8 @@ const About = () => {
       technologies: [
         "Feature-Sliced Design",
         "Clean architecture",
-        "REST APIs"
+        "REST APIs",
+        "Serverless",
       ]
     },
     {
