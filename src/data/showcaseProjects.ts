@@ -42,7 +42,7 @@ export const showcaseProjects: ShowcaseProject[] = [
     image: new URL("@/assets/view-live-demo-placeholder.jpg", import.meta.url).href,
     features: ["User Roles", "Real-time Updates", "Analytics", "Team Management"],
     technologies: ["React", "Supabase", "Recharts"],
-    showcasePath: "/dev/saas-dashboard",
+    showcasePath: "/showcase/saas-dashboard/",
     isLive: false,
   },
 ];
