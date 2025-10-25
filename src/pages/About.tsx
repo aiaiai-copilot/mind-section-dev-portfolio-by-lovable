@@ -7,7 +7,12 @@ const About = () => {
     {
       category: "Frontend",
       icon: <Globe className="h-6 w-6 text-primary" />,
-      technologies: ["React", "TypeScript"]
+      technologies: [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "etc",
+      ]
     },
     {
       category: "Backend", 
@@ -17,7 +22,8 @@ const About = () => {
         "TypeScript",
         "Java",
         "PostgreSQL",
-        "Redis"
+        "Redis",
+        "etc",
       ]
     },
     {
