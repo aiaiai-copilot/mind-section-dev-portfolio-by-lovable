@@ -34,7 +34,7 @@ const About = () => {
       category: "Development",
       icon: <Code2 className="h-6 w-6 text-primary" />,
       technologies: [
-        "AI Tools",
+        "AI Tools(Claude Code, Lovable, etc)",
         "Spec-Driven Development",
         "Test-Driven Development",
         "API-First Approach",
