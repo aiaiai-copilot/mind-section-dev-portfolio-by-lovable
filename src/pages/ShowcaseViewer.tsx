@@ -7,10 +7,8 @@ const ShowcaseViewer = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Find project by showcasePath (normalize trailing slashes)
-  const normalize = (path: string) => path.replace(/\/+$/, '');
-  const currentPath = normalize(location.pathname);
-  const project = showcaseProjects.find(p => normalize(p.showcasePath) === currentPath);
+  // Find project by showcasePath
+  const project = showcaseProjects.find(p => p.showcasePath === location.pathname);
 
   // Use showcasePath to construct production URL only if project is live
   const showcaseUrl = project?.isLive && project?.showcasePath 
