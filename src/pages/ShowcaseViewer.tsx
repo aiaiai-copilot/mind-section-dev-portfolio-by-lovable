@@ -10,8 +10,8 @@ const ShowcaseViewer = () => {
   // Find project by showcasePath
   const project = showcaseProjects.find(p => p.showcasePath === location.pathname);
   
-  // Use showcasePath to construct production URL
-  const showcaseUrl = project?.showcasePath 
+  // Use showcasePath to construct production URL only if project is live
+  const showcaseUrl = project?.isLive && project?.showcasePath 
     ? `${window.location.origin}${project.showcasePath}`
     : null;
 

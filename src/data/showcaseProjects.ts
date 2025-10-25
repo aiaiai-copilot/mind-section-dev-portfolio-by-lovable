@@ -7,6 +7,7 @@ export interface ShowcaseProject {
   features: string[];
   technologies: string[];
   showcasePath: string;
+  isLive?: boolean;
 }
 
 export const showcaseProjects: ShowcaseProject[] = [
@@ -19,6 +20,7 @@ export const showcaseProjects: ShowcaseProject[] = [
     features: ["Security", "Authentication", "OAuth"],
     technologies: ["OAuth", "React", "TypeScript"],
     showcasePath: "/showcase/oauth/simplest/",
+    isLive: true,
   },
   {
     id: "telegram-bot-messaging",
@@ -30,6 +32,7 @@ export const showcaseProjects: ShowcaseProject[] = [
     features: ["Telegram Bot", "Sending messages", "Integration"],
     technologies: ["Telegram", "Web", "Serverless"],
     showcasePath: "/showcase/telegram-bot/messaging/",
+    isLive: true,
   },
   {
     id: "saas-dashboard",
@@ -40,5 +43,6 @@ export const showcaseProjects: ShowcaseProject[] = [
     features: ["User Roles", "Real-time Updates", "Analytics", "Team Management"],
     technologies: ["React", "Supabase", "Recharts"],
     showcasePath: "/dev/saas-dashboard",
+    isLive: false,
   },
 ];
