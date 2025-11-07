@@ -35,6 +35,17 @@ export const showcaseProjects: ShowcaseProject[] = [
     isLive: true,
   },
   {
+    id: "sbp-payments",
+    title: "СБП Платежи",
+    description: "Интеграция с Системой быстрых платежей для генерации QR-кодов и приема оплаты в реальном времени",
+    category: "Payment Integration",
+    image: new URL("@/assets/sbp-payments.jpg", import.meta.url).href,
+    features: ["QR Code Generation", "Real-time Payment", "Test Mode", "SBP Integration"],
+    technologies: ["СБП", "React", "TypeScript", "Payment API"],
+    showcasePath: "/showcase/payments/sbp/",
+    isLive: true,
+  },
+  {
     id: "saas-dashboard",
     title: "SaaS Dashboard",
     description: "Multi-user application with user roles and real-time data",
