@@ -57,28 +57,28 @@
       "button": "Contact Me"
     },
     "projects": {
-      "oauthSimplest": {
+      "oauthsimplest": {
         "title": "Simplest authentication",
         "description": "A demonstration of client-side only authentication, allowing users to sign in with their existing accounts from major providers like Google or GitHub without needing a backend",
         "category": "OAuth authentication",
         "features": ["Security", "Authentication", "OAuth"],
         "technologies": ["OAuth", "React", "TypeScript"]
       },
-      "telegramBot": {
+      "telegrambotmessaging": {
         "title": "Telegram Bot messaging",
         "description": "Instant sending of data from a web form to a Telegram channel",
         "category": "Telegram Bot",
         "features": ["Telegram Bot", "Sending messages", "Integration"],
         "technologies": ["Telegram", "Web", "Serverless"]
       },
-      "sbpPayments": {
+      "sbppayments": {
         "title": "SBP Payments",
         "description": "Integration with the Fast Payment System for generating QR codes and accepting payments in real-time",
         "category": "Payment Integration",
         "features": ["QR Code Generation", "Real-time Payment", "Test Mode", "SBP Integration"],
         "technologies": ["SBP", "React", "TypeScript", "Payment API"]
       },
-      "saasDashboard": {
+      "saasdashboard": {
         "title": "SaaS Dashboard",
         "description": "Multi-user application with user roles and real-time data",
         "category": "Multi-user SaaS",

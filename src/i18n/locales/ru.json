@@ -57,28 +57,28 @@
       "button": "Связаться"
     },
     "projects": {
-      "oauthSimplest": {
+      "oauthsimplest": {
         "title": "Простейшая аутентификация",
         "description": "Демонстрация клиентской аутентификации, позволяющая пользователям входить через существующие аккаунты основных провайдеров, таких как Google или GitHub, без необходимости бэкенда",
         "category": "OAuth аутентификация",
         "features": ["Безопасность", "Аутентификация", "OAuth"],
         "technologies": ["OAuth", "React", "TypeScript"]
       },
-      "telegramBot": {
+      "telegrambotmessaging": {
         "title": "Обмен сообщениями через Telegram Bot",
         "description": "Мгновенная отправка данных из веб-формы в Telegram канал",
         "category": "Telegram Bot",
         "features": ["Telegram Bot", "Отправка сообщений", "Интеграция"],
         "technologies": ["Telegram", "Web", "Serverless"]
       },
-      "sbpPayments": {
+      "sbppayments": {
         "title": "СБП Платежи",
         "description": "Интеграция с Системой быстрых платежей для генерации QR-кодов и приема оплаты в реальном времени",
         "category": "Платёжная интеграция",
         "features": ["Генерация QR-кодов", "Оплата в реальном времени", "Тестовый режим", "Интеграция СБП"],
         "technologies": ["СБП", "React", "TypeScript", "Payment API"]
       },
-      "saasDashboard": {
+      "saasdashboard": {
         "title": "SaaS Панель управления",
         "description": "Многопользовательское приложение с ролями пользователей и данными в реальном времени",
         "category": "Многопользовательская SaaS",
