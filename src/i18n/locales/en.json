@@ -10,7 +10,7 @@
   "home": {
     "hero": {
       "title": "Mind/Section",
-      "subtitle": "Fullstack Developer Crafting",
+      "subtitle": "Full-stack Development",
       "tagline": "Sustainable code. Clear architecture.<br />Documentation that works — for people and tools"
     },
     "sdd": {
@@ -26,7 +26,7 @@
     "description": "Web applications built to last — with explicit structure, thorough documentation, and code that's good maintainable by developers and AI alike",
     "technicalExpertise": {
       "title": "Technical Expertise",
-      "subtitle": "Full-stack capabilities with focus on modern, maintainable technologies"
+      "subtitle": "Full-stack development with focus on modern technologies"
     },
     "skills": {
       "frontend": {
@@ -43,7 +43,7 @@
       },
       "development": {
         "category": "Development",
-        "technologies": ["Spec-Driven Development", "Test-Driven Development", "API-First Approach", "Docker", "Git", "CI/CD", "Documentation", "Code Review", "AI Tools:", "  • Claude Code,", "  • Lovable,", "  • etc"]
+        "technologies": ["Spec-Driven Development", "Test-Driven Development", "Contract-First Approach", "Docker", "Git", "CI/CD", "Documentation", "Integration with the LLM API", "AI Tools:", "  • Claude Code,", "  • Lovable,", "  • etc"]
       }
     }
   },
