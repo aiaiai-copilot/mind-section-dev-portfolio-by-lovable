@@ -1,58 +1,31 @@
 import developerPhoto from '@/assets/developer-photo.png';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Code2, Database, Globe, Server } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
+
   const skills = [
     {
-      category: "Frontend",
+      category: t('about.skills.frontend.category'),
       icon: <Globe className="h-6 w-6 text-primary" />,
-      technologies: [
-        "TypeScript",
-        "JavaScript",
-        "React",
-        "etc",
-      ]
+      technologies: t('about.skills.frontend.technologies', { returnObjects: true }) as string[]
     },
     {
-      category: "Backend", 
+      category: t('about.skills.backend.category'),
       icon: <Server className="h-6 w-6 text-primary" />,
-      technologies: [
-        "Node.js",
-        "TypeScript",
-        "Java",
-        "PostgreSQL",
-        "Redis",
-        "etc",
-      ]
+      technologies: t('about.skills.backend.technologies', { returnObjects: true }) as string[]
     },
     {
-      category: "Architecture",
+      category: t('about.skills.architecture.category'),
       icon: <Database className="h-6 w-6 text-primary" />,
-      technologies: [
-        "Feature-Sliced Design",
-        "Clean architecture",
-        "REST APIs",
-        "Serverless",
-      ]
+      technologies: t('about.skills.architecture.technologies', { returnObjects: true }) as string[]
     },
     {
-      category: "Development",
+      category: t('about.skills.development.category'),
       icon: <Code2 className="h-6 w-6 text-primary" />,
-      technologies: [
-        "Spec-Driven Development",
-        "Test-Driven Development",
-        "API-First Approach",
-        "Docker",
-        "Git",
-        "CI/CD",
-        "Documentation",
-        "Code Review",
-        "AI Tools:",
-        "\u00A0\u00A0• Claude Code,",
-        "\u00A0\u00A0• Lovable,",
-        "\u00A0\u00A0• etc",
-      ]
+      technologies: t('about.skills.development.technologies', { returnObjects: true }) as string[]
     }
   ];
 
@@ -62,17 +35,17 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <div className="flex justify-center mb-8">
-            <img 
-              src={developerPhoto} 
-              alt="Developer Photo" 
+            <img
+              src={developerPhoto}
+              alt="Developer Photo"
               className="w-48 md:w-56 h-auto rounded-lg border-4 border-primary/20 shadow-elegant"
             />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            About Mind/Section
+            {t('about.title')}
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Web applications built to last — with explicit structure, thorough documentation, and code that’s good maintainable by developers and AI alike
+            {t('about.description')}
           </p>
         </div>
 
@@ -80,10 +53,10 @@ const About = () => {
         <section className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-              Technical Expertise
+              {t('about.technicalExpertise.title')}
             </h2>
             <p className="text-lg text-muted-foreground">
-              Full-stack capabilities with focus on modern, maintainable technologies
+              {t('about.technicalExpertise.subtitle')}
             </p>
           </div>
 
@@ -116,7 +89,7 @@ const About = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
               Professional Experience
             </h2>
-            
+
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-2">Senior Fullstack Developer</h3>

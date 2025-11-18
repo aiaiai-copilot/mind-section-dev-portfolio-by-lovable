@@ -1,0 +1,199 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "showcase": "Showcase",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Mind/Section",
+      "subtitle": "Fullstack Developer Crafting",
+      "tagline": "Sustainable code. Clear architecture.<br />Documentation that works — for people and tools"
+    },
+    "sdd": {
+      "title": "Spec-Driven Development",
+      "description": "Building web applications designed to last — with robust architecture, comprehensive documentation, thorough contract testing, and maintainable code that enables rapid onboarding for developers and AI-assisted tools alike"
+    },
+    "cta": {
+      "button": "Start Your Project"
+    }
+  },
+  "about": {
+    "title": "About Mind/Section",
+    "description": "Web applications built to last — with explicit structure, thorough documentation, and code that's good maintainable by developers and AI alike",
+    "technicalExpertise": {
+      "title": "Technical Expertise",
+      "subtitle": "Full-stack capabilities with focus on modern, maintainable technologies"
+    },
+    "skills": {
+      "frontend": {
+        "category": "Frontend",
+        "technologies": ["TypeScript", "JavaScript", "React", "etc"]
+      },
+      "backend": {
+        "category": "Backend",
+        "technologies": ["Node.js", "TypeScript", "Java", "PostgreSQL", "Redis", "etc"]
+      },
+      "architecture": {
+        "category": "Architecture",
+        "technologies": ["Feature-Sliced Design", "Clean architecture", "REST APIs", "Serverless"]
+      },
+      "development": {
+        "category": "Development",
+        "technologies": ["Spec-Driven Development", "Test-Driven Development", "API-First Approach", "Docker", "Git", "CI/CD", "Documentation", "Code Review", "AI Tools:", "  • Claude Code,", "  • Lovable,", "  • etc"]
+      }
+    }
+  },
+  "showcase": {
+    "title": "Showcase",
+    "subtitle": "Solutions I can build to meet your needs",
+    "keyFeatures": "Key Features:",
+    "cta": {
+      "title": "Ready to start your project?",
+      "description": "Contact me to discuss your requirements and get a custom solution",
+      "button": "Contact Me"
+    },
+    "projects": {
+      "oauthSimplest": {
+        "title": "Simplest authentication",
+        "description": "A demonstration of client-side only authentication, allowing users to sign in with their existing accounts from major providers like Google or GitHub without needing a backend",
+        "category": "OAuth authentication",
+        "features": ["Security", "Authentication", "OAuth"],
+        "technologies": ["OAuth", "React", "TypeScript"]
+      },
+      "telegramBot": {
+        "title": "Telegram Bot messaging",
+        "description": "Instant sending of data from a web form to a Telegram channel",
+        "category": "Telegram Bot",
+        "features": ["Telegram Bot", "Sending messages", "Integration"],
+        "technologies": ["Telegram", "Web", "Serverless"]
+      },
+      "sbpPayments": {
+        "title": "SBP Payments",
+        "description": "Integration with the Fast Payment System for generating QR codes and accepting payments in real-time",
+        "category": "Payment Integration",
+        "features": ["QR Code Generation", "Real-time Payment", "Test Mode", "SBP Integration"],
+        "technologies": ["SBP", "React", "TypeScript", "Payment API"]
+      },
+      "saasDashboard": {
+        "title": "SaaS Dashboard",
+        "description": "Multi-user application with user roles and real-time data",
+        "category": "Multi-user SaaS",
+        "features": ["User Roles", "Real-time Updates", "Analytics", "Team Management"],
+        "technologies": ["React", "Supabase", "Recharts"]
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "featured": "Featured Projects",
+    "additional": "Additional Projects"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Insights on Spec-Driven Development, Software Architecture, and Modern Web Technologies",
+    "featured": "Featured Posts",
+    "allPosts": "All Posts",
+    "readMore": "Read More",
+    "backToList": "← Back to Blog"
+  },
+  "contact": {
+    "title": "Let's discuss your project.",
+    "form": {
+      "title": "Project Inquiry",
+      "description": "Tell me about your project and I'll get back to you within 24 hours with a detailed response.",
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "projectType": "Project Type",
+      "budgetRange": "Budget Range",
+      "projectDetails": "Project Details",
+      "placeholders": {
+        "name": "Your full name",
+        "email": "your.email@company.com",
+        "company": "Your company name",
+        "projectType": "Select project type",
+        "budgetRange": "Select budget range",
+        "message": "Please describe your project, current challenges, and what you're hoping to achieve. The more details you provide, the better I can help you."
+      },
+      "projectTypes": {
+        "newApp": "New Web Application",
+        "api": "API Development",
+        "docs": "Technical Documentation",
+        "consulting": "SDD Consulting",
+        "other": "Other"
+      },
+      "budgetRanges": {
+        "under1k": "Under $1k",
+        "1to2k": "$1k - $2k",
+        "2to5k": "$2k - $5k",
+        "5to10k": "$5k - $10k",
+        "over10k": "$10k+",
+        "notSure": "Not sure yet"
+      },
+      "submit": "Send Message",
+      "validation": {
+        "required": "Please fill in all required fields",
+        "invalidEmail": "Please enter a valid email"
+      },
+      "success": {
+        "title": "Message sent!",
+        "description": "Thank you for your inquiry. I'll get back to you within 24 hours."
+      },
+      "error": {
+        "title": "Error",
+        "description": "Failed to send message. Please try again later or email me at alexanderlapygin@gmail.com"
+      }
+    },
+    "getInTouch": {
+      "title": "Get In Touch",
+      "email": {
+        "title": "Email",
+        "description": "Send me a detailed project inquiry"
+      }
+    },
+    "whatHappensNext": {
+      "title": "What Happens Next?",
+      "step1": {
+        "title": "Initial Discussion",
+        "description": "We'll discuss your project goals, technical requirements, and timeline expectations."
+      },
+      "step2": {
+        "title": "Technical Specification",
+        "description": "I'll create a comprehensive technical specification outlining architecture, timeline, and deliverables."
+      },
+      "step3": {
+        "title": "Development",
+        "description": "Build your application with regular updates, comprehensive testing, and complete documentation."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "timeline": {
+        "question": "What's your typical project timeline?",
+        "answer": "Most projects range from 1-2 months, depending on complexity. I provide detailed timelines in the specification phase."
+      },
+      "technologies": {
+        "question": "What technologies do you specialize in?",
+        "answer": "Mainly React, TypeScript, Node.js, and PostgreSQL — but I always pick the right tools for the job."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Crafting maintainable web experiences through Spec-Driven Development. Reliable code that grows with your business.",
+    "services": {
+      "title": "Services",
+      "list": [
+        "Web Application Architecture",
+        "Full-Stack Development",
+        "Technical Documentation",
+        "Spec-Driven Development Consulting"
+      ]
+    },
+    "connect": "Connect",
+    "copyright": "© 2025 Mind/Section. All rights reserved."
+  }
+}

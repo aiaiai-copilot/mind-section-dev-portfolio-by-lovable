@@ -1,9 +1,13 @@
 import { Github, Mail } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const location = useLocation();
   const isContactPage = location.pathname.includes('/contact');
+  const { t } = useTranslation();
+
+  const services = t('footer.services.list', { returnObjects: true }) as string[];
 
   return (
     <footer className="bg-secondary/50 border-t border-border mt-20">
@@ -12,23 +16,21 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg text-primary mb-4">Mind/Section</h3>
             <p className="text-muted-foreground">
-              Crafting maintainable web experiences through Spec-Driven Development.
-              Reliable code that grows with your business.
+              {t('footer.tagline')}
             </p>
           </div>
-          
+
           <div>
-            <h4 className="font-medium text-primary mb-4">Services</h4>
+            <h4 className="font-medium text-primary mb-4">{t('footer.services.title')}</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>Web Application Architecture</li>
-              <li>Full-Stack Development</li>
-              <li>Technical Documentation</li>
-              <li>Spec-Driven Development Consulting</li>
+              {services.map((service, index) => (
+                <li key={index}>{service}</li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h4 className="font-medium text-primary mb-4">Connect</h4>
+            <h4 className="font-medium text-primary mb-4">{t('footer.connect')}</h4>
             <div className="flex space-x-4">
               {!isContactPage && (
                 <Link
@@ -53,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2025 Mind/Section. All rights reserved.</p>
+          <p>{t('footer.copyright')}</p>
         </div>
       </div>
     </footer>
