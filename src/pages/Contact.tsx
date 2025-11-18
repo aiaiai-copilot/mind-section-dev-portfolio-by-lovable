@@ -107,22 +107,11 @@ const Contact = () => {
     // }
   ];
 
-  const projectTypes = [
-    "New Web Application",
-    "API Development",
-    "Technical Documentation",
-    "SDD Consulting",
-    "Other"
-  ];
+  const projectTypesObj = t('contact.form.projectTypes', { returnObjects: true }) as Record<string, string>;
+  const projectTypes = Object.values(projectTypesObj);
 
-  const budgetRanges = [
-    "Under $1k",
-    "$1k - $2k",
-    "$2k - $5k", 
-    "$5k - $10k",
-    "$10k+",
-    "Not sure yet"
-  ];
+  const budgetRangesObj = t('contact.form.budgetRanges', { returnObjects: true }) as Record<string, string>;
+  const budgetRanges = Object.values(budgetRangesObj);
 
   return (
     <div className="min-h-screen py-20 px-4">
