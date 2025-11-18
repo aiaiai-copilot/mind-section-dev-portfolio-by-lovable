@@ -86,8 +86,8 @@ const Contact = () => {
   const contactMethods = [
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
-      title: "Email",
-      description: "Send me a detailed project inquiry",
+      title: t('contact.getInTouch.email.title'),
+      description: t('contact.getInTouch.email.description'),
       contact: "alexanderlapygin@gmail.com",
       action: "mailto:alexanderlapygin@gmail.com"
     },
@@ -275,7 +275,7 @@ const Contact = () => {
             {/* Process Overview */}
             <Card className="shadow-card border-0 bg-secondary/30">
               <CardHeader>
-                <CardTitle className="text-primary">What Happens Next?</CardTitle>
+                <CardTitle className="text-primary">{t('contact.whatHappensNext.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
@@ -284,8 +284,8 @@ const Contact = () => {
                       1
                     </div>
                     <div>
-                      <h4 className="font-medium text-primary">Initial Discussion</h4>
-                      <p className="text-sm text-muted-foreground">We'll discuss your project goals, technical requirements, and timeline expectations.</p>
+                      <h4 className="font-medium text-primary">{t('contact.whatHappensNext.step1.title')}</h4>
+                      <p className="text-sm text-muted-foreground">{t('contact.whatHappensNext.step1.description')}</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -293,8 +293,8 @@ const Contact = () => {
                       2
                     </div>
                     <div>
-                      <h4 className="font-medium text-primary">Technical Specification</h4>
-                      <p className="text-sm text-muted-foreground">I'll create a comprehensive technical specification outlining architecture, timeline, and deliverables.</p>
+                      <h4 className="font-medium text-primary">{t('contact.whatHappensNext.step2.title')}</h4>
+                      <p className="text-sm text-muted-foreground">{t('contact.whatHappensNext.step2.description')}</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -302,8 +302,8 @@ const Contact = () => {
                       3
                     </div>
                     <div>
-                      <h4 className="font-medium text-primary">Development</h4>
-                      <p className="text-sm text-muted-foreground">Build your application with regular updates, comprehensive testing, and complete documentation.</p>
+                      <h4 className="font-medium text-primary">{t('contact.whatHappensNext.step3.title')}</h4>
+                      <p className="text-sm text-muted-foreground">{t('contact.whatHappensNext.step3.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -313,21 +313,21 @@ const Contact = () => {
             {/* FAQ */}
             <Card className="shadow-card border-0">
               <CardHeader>
-                <CardTitle className="text-primary">Frequently Asked Questions</CardTitle>
+                <CardTitle className="text-primary">{t('contact.faq.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-medium text-primary mb-1">What's your typical project timeline?</h4>
-                    <p className="text-sm text-muted-foreground">Most projects range from 1-2 months, depending on complexity. I provide detailed timelines in the specification phase.</p>
+                    <h4 className="font-medium text-primary mb-1">{t('contact.faq.timeline.question')}</h4>
+                    <p className="text-sm text-muted-foreground">{t('contact.faq.timeline.answer')}</p>
                   </div>
                   {/* <div>
                     <h4 className="font-medium text-primary mb-1">Do you work with existing teams?</h4>
                     <p className="text-sm text-muted-foreground">Absolutely. I often collaborate with internal teams, providing architecture guidance and mentoring on best practices.</p>
                   </div> */}
                   <div>
-                    <h4 className="font-medium text-primary mb-1">What technologies do you specialize in?</h4>
-                    <p className="text-sm text-muted-foreground">Mainly React, TypeScript, Node.js, and PostgreSQL — but I always pick the right tools for the job.</p>
+                    <h4 className="font-medium text-primary mb-1">{t('contact.faq.technologies.question')}</h4>
+                    <p className="text-sm text-muted-foreground">{t('contact.faq.technologies.answer')}</p>
                   </div>
                 </div>
               </CardContent>

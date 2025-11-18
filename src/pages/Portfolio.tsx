@@ -2,8 +2,10 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle, ExternalLink, Github } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Portfolio = () => {
+  const { t } = useTranslation();
   const projects = [
     // {
     //   title: "Enterprise E-Commerce Platform",
@@ -183,13 +185,13 @@ const Portfolio = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Portfolio
+            {t('portfolio.title')}
           </h1>
         </div>
 
         {/* Featured Projects */}
         <section className="mb-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">Featured Projects</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">{t('portfolio.featured')}</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {featuredProjects.map((project, index) => (
               <ProjectCard key={index} project={project} featured />
