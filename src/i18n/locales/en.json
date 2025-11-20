@@ -31,19 +31,49 @@
     "skills": {
       "frontend": {
         "category": "Frontend",
-        "technologies": ["TypeScript", "JavaScript", "React", "etc"]
+        "technologies": [
+          "TypeScript",
+          "JavaScript",
+          "React",
+          "etc"
+        ]
       },
       "backend": {
         "category": "Backend",
-        "technologies": ["Node.js", "TypeScript", "Java", "PostgreSQL", "Redis", "etc"]
+        "technologies": [
+          "Node.js",
+          "TypeScript",
+          "Java",
+          "PostgreSQL",
+          "Redis",
+          "etc"
+        ]
       },
       "architecture": {
         "category": "Architecture",
-        "technologies": ["Feature-Sliced Design", "Clean architecture", "REST APIs", "Serverless"]
+        "technologies": [
+          "Feature-Sliced Design",
+          "Clean architecture",
+          "REST APIs",
+          "Serverless"
+        ]
       },
       "development": {
         "category": "Development",
-        "technologies": ["Spec-Driven Development", "Test-Driven Development", "Contract-First Approach", "Docker", "Git", "CI/CD", "Documentation", "Integration with the LLM API", "AI Tools:", "  • Claude Code,", "  • Lovable,", "  • etc"]
+        "technologies": [
+          "Spec-Driven Development",
+          "Test-Driven Development",
+          "Contract-First Approach",
+          "Docker",
+          "Git",
+          "CI/CD",
+          "Documentation",
+          "Integration with the LLM API",
+          "AI Tools:",
+          "  • Claude Code,",
+          "  • Lovable,",
+          "  • etc"
+        ]
       }
     }
   },
@@ -61,36 +91,125 @@
         "title": "Simplest authentication",
         "description": "A demonstration of client-side only authentication, allowing users to sign in with their existing accounts from major providers like Google or GitHub without needing a backend",
         "category": "OAuth authentication",
-        "features": ["Security", "Authentication", "OAuth"],
-        "technologies": ["OAuth", "React", "TypeScript"]
+        "features": [
+          "Security",
+          "Authentication",
+          "OAuth"
+        ],
+        "technologies": [
+          "OAuth",
+          "React",
+          "TypeScript"
+        ]
       },
       "telegrambotmessaging": {
         "title": "Telegram Bot messaging",
         "description": "Instant sending of data from a web form to a Telegram channel",
         "category": "Telegram Bot",
-        "features": ["Telegram Bot", "Sending messages", "Integration"],
-        "technologies": ["Telegram", "Web", "Serverless"]
+        "features": [
+          "Telegram Bot",
+          "Sending messages",
+          "Integration"
+        ],
+        "technologies": [
+          "Telegram",
+          "Web",
+          "Serverless"
+        ]
       },
       "sbppayments": {
         "title": "SBP Payments",
         "description": "Integration with the Fast Payment System for generating QR codes and accepting payments in real-time",
         "category": "Payment Integration",
-        "features": ["QR Code Generation", "Real-time Payment", "Test Mode", "SBP Integration"],
-        "technologies": ["SBP", "React", "TypeScript", "Payment API"]
+        "features": [
+          "QR Code Generation",
+          "Real-time Payment",
+          "Test Mode",
+          "SBP Integration"
+        ],
+        "technologies": [
+          "SBP",
+          "React",
+          "TypeScript",
+          "Payment API"
+        ]
       },
       "saasdashboard": {
         "title": "SaaS Dashboard",
         "description": "Multi-user application with user roles and real-time data",
         "category": "Multi-user SaaS",
-        "features": ["User Roles", "Real-time Updates", "Analytics", "Team Management"],
-        "technologies": ["React", "Supabase", "Recharts"]
+        "features": [
+          "User Roles",
+          "Real-time Updates",
+          "Analytics",
+          "Team Management"
+        ],
+        "technologies": [
+          "React",
+          "Supabase",
+          "Recharts"
+        ]
       }
     }
   },
   "portfolio": {
     "title": "Portfolio",
     "featured": "Featured Projects",
-    "additional": "Additional Projects"
+    "additional": "Preparatory Projects",
+    "projects": {
+      "livingTagsPrototype": {
+        "title": "Living Tags Prototype",
+        "description": "SaaS prototype for automatic tagging of short texts",
+        "longDescription": "Evolution of the PoC into a full-fledged SaaS platform prototype. Includes advanced tools for working with text data, collection management, and user settings.",
+        "features": [
+          "Refined tag glossary",
+          "Text collection editor",
+          "High-quality UI/UX design",
+          "Supabase integration (Database & Auth)",
+          "User authorization"
+        ],
+        "metrics": {
+          "status": "Prototype",
+          "stack": "Modern",
+          "type": "SaaS",
+          "access": "Public"
+        }
+      },
+      "livingTagsPoC": {
+        "title": "Living Tags PoC",
+        "description": "Proof of Concept for automatic tagging of short texts",
+        "longDescription": "Initial implementation of the automatic tagging idea. Demonstrates the capabilities of using LLMs to analyze and structure short text fragments.",
+        "features": [
+          "AI API usage (Claude API)",
+          "Automatic tag generation",
+          "Basic text input interface",
+          "LLM capabilities demonstration"
+        ],
+        "metrics": {
+          "status": "PoC",
+          "api": "Claude",
+          "type": "Demo",
+          "code": "Open"
+        }
+      },
+      "livingTagsMVP": {
+        "title": "Living Tags MVP",
+        "description": "Minimum Viable Product for automatic tagging service",
+        "longDescription": "MVP version with core functionality ready for early adopters. Includes essential features for production use.",
+        "features": [
+          "Production-ready infrastructure",
+          "User management system",
+          "API for integrations",
+          "Performance optimizations"
+        ],
+        "metrics": {
+          "status": "Coming Soon",
+          "stack": "Modern",
+          "type": "MVP",
+          "access": "Beta"
+        }
+      }
+    }
   },
   "blog": {
     "title": "Blog",
