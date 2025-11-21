@@ -1,20 +1,27 @@
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Languages } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Showcase', href: '/showcase' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/contact' },
+    { name: t('navigation.home'), href: '/' },
+    { name: t('navigation.about'), href: '/about' },
+    { name: t('navigation.showcase'), href: '/showcase' },
+    { name: t('navigation.portfolio'), href: '/portfolio' },
+    { name: t('navigation.blog'), href: '/blog' },
+    { name: t('navigation.contact'), href: '/contact' },
   ];
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'ru' : 'en';
+    i18n.changeLanguage(newLang);
+  };
 
   return (
     <nav className="fixed top-0 w-full bg-card/80 backdrop-blur-md border-b border-border z-50">
@@ -25,7 +32,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -39,10 +46,30 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleLanguage}
+              className="flex items-center space-x-1"
+              title={i18n.language === 'en' ? 'Switch to Russian' : 'Переключить на английский'}
+            >
+              <Languages className="h-4 w-4" />
+              <span className="text-xs font-medium">{i18n.language.toUpperCase()}</span>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleLanguage}
+              className="flex items-center space-x-1"
+              title={i18n.language === 'en' ? 'Switch to Russian' : 'Переключить на английский'}
+            >
+              <Languages className="h-4 w-4" />
+              <span className="text-xs font-medium">{i18n.language.toUpperCase()}</span>
+            </Button>
             <Button
               variant="ghost"
               size="sm"

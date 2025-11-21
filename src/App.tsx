@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Showcase from "./pages/Showcase";
 import ShowcaseViewer from "./pages/ShowcaseViewer";
 import Portfolio from "./pages/Portfolio";
+import PortfolioComingSoon from "./pages/PortfolioComingSoon";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/showcase" element={<Showcase />} />
             <Route path="/showcase/*" element={<ShowcaseViewer />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/coming-soon" element={<PortfolioComingSoon />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />

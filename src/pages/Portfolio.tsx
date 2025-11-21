@@ -2,52 +2,46 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle, ExternalLink, Github } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Portfolio = () => {
+  const { t } = useTranslation();
+
   const projects = [
     {
-      title: "Living Tags Prototype",
-      description: "Прототип SaaS - сервиса для автоматической разметки тегами коротких текстов",
-      longDescription: "Развитие идеи PoC в полноценный прототип SaaS-платформы. Включает в себя продвинутые инструменты для работы с текстовыми данными, управление коллекциями и пользовательские настройки.",
-      image: "/placeholder.svg",
-      technologies: ["TypeScript", "React", "Vite", "Supabase", "TailwindCSS"],
-      features: [
-        "Доработанный глоссарий тегов",
-        "Редактор коллекции текстов",
-        "Качественный UI/UX дизайн",
-        "Интеграция с Supabase (Database & Auth)",
-        "Авторизация пользователей"
-      ],
-      metrics: {
-        status: "Prototype",
-        stack: "Modern",
-        type: "SaaS",
-        access: "Public"
-      },
-      github: "https://github.com/aiaiai-copilot/living-tags-prototype",
-      live: "https://living-tags-prototype.lovable.app/",
-      featured: true
-    },
-    {
-      title: "Living Tags PoC",
-      description: "Proof of Concept(проверка идеи) сервиса для автоматической разметки тегами коротких текстов",
-      longDescription: "Первоначальная реализация идеи автоматической тегизации. Демонстрирует возможности использования LLM для анализа и структурирования коротких текстовых фрагментов.",
+      title: t('portfolio.projects.livingTagsPoC.title'),
+      description: t('portfolio.projects.livingTagsPoC.description'),
+      longDescription: t('portfolio.projects.livingTagsPoC.longDescription'),
       image: "/placeholder.svg",
       technologies: ["TypeScript", "React", "Vite", "Claude API"],
-      features: [
-        "Использование AI API (Claude API)",
-        "Автоматическая генерация тегов",
-        "Базовый интерфейс для ввода текста",
-        "Демонстрация возможностей LLM"
-      ],
-      metrics: {
-        status: "PoC",
-        api: "Claude",
-        type: "Demo",
-        code: "Open"
-      },
+      features: t('portfolio.projects.livingTagsPoC.features', { returnObjects: true }) as string[],
+      metrics: t('portfolio.projects.livingTagsPoC.metrics', { returnObjects: true }) as Record<string, string>,
       github: "https://github.com/aiaiai-copilot/living-tags-poc",
       live: "https://living-tags-poc.lovable.app/",
+      featured: false
+    },
+    {
+      title: t('portfolio.projects.livingTagsPrototype.title'),
+      description: t('portfolio.projects.livingTagsPrototype.description'),
+      longDescription: t('portfolio.projects.livingTagsPrototype.longDescription'),
+      image: "/placeholder.svg",
+      technologies: ["TypeScript", "React", "Vite", "Supabase", "TailwindCSS"],
+      features: t('portfolio.projects.livingTagsPrototype.features', { returnObjects: true }) as string[],
+      metrics: t('portfolio.projects.livingTagsPrototype.metrics', { returnObjects: true }) as Record<string, string>,
+      github: "https://github.com/aiaiai-copilot/living-tags-prototype",
+      live: "https://living-tags-prototype.lovable.app/",
+      featured: false
+    },
+    {
+      title: t('portfolio.projects.livingTagsMVP.title'),
+      description: t('portfolio.projects.livingTagsMVP.description'),
+      longDescription: t('portfolio.projects.livingTagsMVP.longDescription'),
+      image: "/placeholder.svg",
+      technologies: ["TypeScript", "React", "Vite", "Supabase", "TailwindCSS"],
+      features: t('portfolio.projects.livingTagsMVP.features', { returnObjects: true }) as string[],
+      metrics: t('portfolio.projects.livingTagsMVP.metrics', { returnObjects: true }) as Record<string, string>,
+      github: "/portfolio/coming-soon",
+      live: "/portfolio/coming-soon",
       featured: false
     }
   ];
@@ -132,23 +126,25 @@ const Portfolio = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Portfolio
+            {t('portfolio.title')}
           </h1>
         </div>
 
         {/* Featured Projects */}
-        <section className="mb-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">Featured Projects</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {featuredProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} featured />
-            ))}
-          </div>
-        </section>
+        {featuredProjects.length > 0 && (
+          <section className="mb-20">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">{t('portfolio.featured')}</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {featuredProjects.map((project, index) => (
+                <ProjectCard key={index} project={project} featured />
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Other Projects */}
         <section className="mb-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">Additional Projects</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">{t('portfolio.additional')}</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {otherProjects.map((project, index) => (
               <ProjectCard key={index} project={project} />

@@ -1,8 +1,11 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   const testimonials = [
     {
       quote: "The documentation and code structure made onboarding new team members incredibly smooth. Six months later, we're still building on the solid foundation.",
@@ -22,29 +25,26 @@ const Home = () => {
       <section className="py-20 px-4 text-center animate-fade-in">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6">
-            Mind/Section
+            {t('home.hero.title')}
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-4">
-            Fullstack Developer Crafting
+            {t('home.hero.subtitle')}
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12">
-            Sustainable code. Clear architecture.<br />
-            Documentation that works — for people and tools
-          </p>
-          
+          <p
+            className="text-xl md:text-2xl text-muted-foreground mb-12"
+            dangerouslySetInnerHTML={{ __html: t('home.hero.tagline') }}
+          />
+
           <div className="bg-gradient-subtle p-8 rounded-2xl shadow-card mb-16 animate-slide-up">
-            <h3 className="text-2xl font-bold text-primary mb-4">Spec-Driven Development</h3>
-            {/* <h4 className="text-xl font-semibold text-primary mb-4">Spec-Driven Development</h4> */}
+            <h3 className="text-2xl font-bold text-primary mb-4">{t('home.sdd.title')}</h3>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Building web applications designed to last — with robust architecture, comprehensive documentation,
-              thorough contract testing, and maintainable code that enables rapid onboarding for developers
-              and AI-assisted tools alike
+              {t('home.sdd.description')}
             </p>
           </div>
 
           <Link to="/contact">
             <Button size="lg" className="group">
-              Start Your Project
+              {t('home.cta.button')}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>

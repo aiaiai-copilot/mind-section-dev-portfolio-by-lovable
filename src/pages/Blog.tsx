@@ -6,10 +6,12 @@ import { blogPosts } from '@/data/blogPosts';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
   const [showAllPosts, setShowAllPosts] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (searchParams.get('showAll') === 'true') {
@@ -38,13 +40,13 @@ const Blog = () => {
             />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Development Blog
+            {t('blog.title')}
           </h1>
         </div>
 
         {/* Featured Posts */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">Featured Articles</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">{t('blog.featured')}</h2>
           <div className="grid lg:grid-cols-2 gap-8">
             {featuredPosts.map((post, index) => (
               <Card key={index} className="shadow-elegant hover-scale border-0 group">
@@ -73,7 +75,7 @@ const Blog = () => {
                   </div>
                   <Link to={`/blog/${post.id}`}>
                     <Button variant="ghost" className="p-0 h-auto group/btn">
-                      Read Article
+                      {t('blog.readMore')}
                       <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
@@ -85,7 +87,7 @@ const Blog = () => {
 
         {/* Regular Posts */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">Recent Articles</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">{t('blog.allPosts')}</h2>
           <div className="space-y-6">
             {regularPosts.map((post, index) => (
               <Card key={index} className="shadow-card border-0 hover-scale group">
@@ -114,7 +116,7 @@ const Blog = () => {
                     </div>
                     <Link to={`/blog/${post.id}`}>
                       <Button variant="outline" className="group/btn flex-shrink-0">
-                        Read More
+                        {t('blog.readMore')}
                         <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                       </Button>
                     </Link>
