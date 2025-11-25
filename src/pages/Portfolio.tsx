@@ -8,18 +8,18 @@ const Portfolio = () => {
   const { t } = useTranslation();
 
   const projects = [
-    {
-      title: t('portfolio.projects.livingTagsPoC.title'),
-      description: t('portfolio.projects.livingTagsPoC.description'),
-      longDescription: t('portfolio.projects.livingTagsPoC.longDescription'),
-      image: "/placeholder.svg",
-      technologies: ["TypeScript", "React", "Vite", "Claude API"],
-      features: t('portfolio.projects.livingTagsPoC.features', { returnObjects: true }) as string[],
-      metrics: t('portfolio.projects.livingTagsPoC.metrics', { returnObjects: true }) as Record<string, string>,
-      github: "https://github.com/aiaiai-copilot/living-tags-poc",
-      live: "https://living-tags-poc.lovable.app/",
-      featured: false
-    },
+    // {
+    //   title: t('portfolio.projects.livingTagsPoC.title'),
+    //   description: t('portfolio.projects.livingTagsPoC.description'),
+    //   longDescription: t('portfolio.projects.livingTagsPoC.longDescription'),
+    //   image: "/placeholder.svg",
+    //   technologies: ["TypeScript", "React", "Vite", "Claude API"],
+    //   features: t('portfolio.projects.livingTagsPoC.features', { returnObjects: true }) as string[],
+    //   metrics: t('portfolio.projects.livingTagsPoC.metrics', { returnObjects: true }) as Record<string, string>,
+    //   github: "https://github.com/aiaiai-copilot/living-tags-poc",
+    //   live: "https://living-tags-poc.lovable.app/",
+    //   featured: false
+    // },
     {
       title: t('portfolio.projects.livingTagsPrototype.title'),
       description: t('portfolio.projects.livingTagsPrototype.description'),
@@ -29,7 +29,7 @@ const Portfolio = () => {
       features: t('portfolio.projects.livingTagsPrototype.features', { returnObjects: true }) as string[],
       metrics: t('portfolio.projects.livingTagsPrototype.metrics', { returnObjects: true }) as Record<string, string>,
       github: "https://github.com/aiaiai-copilot/living-tags-prototype",
-      live: "https://living-tags-prototype.lovable.app/",
+      live: "https://alexanderlapygin.com/portfolio/living-tags/living-tags-prototype/",
       featured: false
     },
     {
