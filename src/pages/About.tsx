@@ -84,36 +84,32 @@ const About = () => {
         </section>
 
         {/* Experience Section */}
-        {/* <section className="mb-20">
+        <section className="mb-20">
           <div className="bg-secondary/30 p-8 md:p-12 rounded-2xl">
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
-              Professional Experience
+              {t('about.experience.title')}
             </h2>
 
             <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-semibold text-primary mb-2">Senior Fullstack Developer</h3>
-                <p className="text-muted-foreground mb-4">2020 - Present | Various Client Projects</p>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Architected and developed 15+ web applications with 90%+ test coverage</li>
-                  <li>• Reduced onboarding time for new developers from 3 weeks to 5 days through comprehensive documentation</li>
-                  <li>• Implemented Spec-Driven development processes that decreased bug reports by 60%</li>
-                  <li>• Mentored junior developers on code quality, testing practices, and documentation standards</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-primary mb-2">Lead Frontend Developer</h3>
-                <p className="text-muted-foreground mb-4">2018 - 2020 | TechScale Solutions</p>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Led development of component library used across 8 different applications</li>
-                  <li>• Established testing standards and documentation practices for 12-person development team</li>
-                  <li>• Designed and implemented TypeScript migration strategy for legacy React applications</li>
-                </ul>
-              </div>
+              {(t('about.experience.jobs', { returnObjects: true }) as Array<{
+                role: string;
+                company: string;
+                period: string;
+                achievements: string[];
+              }>).map((job, index) => (
+                <div key={index}>
+                  <h3 className="text-xl font-semibold text-primary mb-2">{job.role}</h3>
+                  <p className="text-muted-foreground mb-4">{job.period} | {job.company}</p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    {job.achievements.map((achievement, i) => (
+                      <li key={i}>• {achievement}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
-        </section> */}
+        </section>
       </div>
     </div>
   );

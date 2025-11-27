@@ -23,7 +23,7 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic form validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
@@ -310,10 +310,10 @@ const Contact = () => {
                     <h4 className="font-medium text-primary mb-1">{t('contact.faq.timeline.question')}</h4>
                     <p className="text-sm text-muted-foreground">{t('contact.faq.timeline.answer')}</p>
                   </div>
-                  {/* <div>
-                    <h4 className="font-medium text-primary mb-1">Do you work with existing teams?</h4>
-                    <p className="text-sm text-muted-foreground">Absolutely. I often collaborate with internal teams, providing architecture guidance and mentoring on best practices.</p>
-                  </div> */}
+                  <div>
+                    <h4 className="font-medium text-primary mb-1">{t('contact.faq.teams.question')}</h4>
+                    <p className="text-sm text-muted-foreground">{t('contact.faq.teams.answer')}</p>
+                  </div>
                   <div>
                     <h4 className="font-medium text-primary mb-1">{t('contact.faq.technologies.question')}</h4>
                     <p className="text-sm text-muted-foreground">{t('contact.faq.technologies.answer')}</p>
