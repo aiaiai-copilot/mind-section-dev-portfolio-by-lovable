@@ -155,24 +155,26 @@
   "portfolio": {
     "title": "Portfolio",
     "featured": "Featured Projects",
-    "additional": "Preparatory Projects",
+    "additional": "Living Tags Projects",
     "projects": {
       "livingTagsPrototype": {
         "title": "Living Tags Prototype",
         "description": "SaaS prototype for automatic tagging of short texts",
         "longDescription": "Evolution of the PoC into a full-fledged SaaS platform prototype. Includes advanced tools for working with text data, collection management, and user settings.",
         "features": [
-          "Refined tag glossary",
+          "Tag glossary",
           "Text collection editor",
+          "Automatic tag generation",
           "High-quality UI/UX design",
-          "Supabase integration (Database & Auth)",
+          "AI API integration",
+          "Supabase integration (Database, Auth)",
           "User authorization"
         ],
         "metrics": {
-          "status": "Prototype",
-          "stack": "Modern",
+          "phase": "Prototype",
           "type": "SaaS",
-          "access": "Public"
+          "access": "Private",
+          "status": "Ready"
         }
       },
       "livingTagsPoC": {
@@ -197,16 +199,20 @@
         "description": "Minimum Viable Product for automatic tagging service",
         "longDescription": "MVP version with core functionality ready for early adopters. Includes essential features for production use.",
         "features": [
+          "Tag glossary",
+          "Text collection editor",
+          "Automatic tag generation",
+          "High-quality UI/UX design",
+          "AI API integration",
           "Production-ready infrastructure",
           "User management system",
-          "API for integrations",
           "Performance optimizations"
         ],
         "metrics": {
-          "status": "Coming Soon",
-          "stack": "Modern",
-          "type": "MVP",
-          "access": "Beta"
+          "phase": "MVP",
+          "type": "SaaS",
+          "access": "Beta",
+          "status": "Coming Soon"
         }
       }
     }
