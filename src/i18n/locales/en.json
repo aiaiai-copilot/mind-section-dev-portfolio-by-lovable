@@ -55,7 +55,8 @@
           "Feature-Sliced Design",
           "Clean architecture",
           "REST APIs",
-          "Serverless"
+          "Serverless",
+          "и др."
         ]
       },
       "development": {
@@ -71,6 +72,7 @@
           "Integration with the LLM API",
           "AI Tools:",
           "  • Claude Code,",
+          "  • Antigravity,",
           "  • Lovable,",
           "  • etc"
         ]
