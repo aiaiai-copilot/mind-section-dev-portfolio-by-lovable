@@ -15,7 +15,7 @@ const enPosts: BlogPost[] = [
     id: "sdd-intro",
     title: "SDD shifts the paradigm",
     excerpt: "SDD (Spec-Driven Development), a paradigm where LLMs handle routine coding based on specifications. This is our intro to a series sharing our early experience and best practices for this transformative approach.",
-    content: `This year, the already long list of "-DD" abbreviations for software development approaches (TDD, DDD, BDD, FDD, MDD, ADD, ...) has been expanded with a new one: **SDD-Spec-Driven Development**.
+    content: `This year, the already long list of "-DD" abbreviations for software development approaches (TDD, DDD, BDD, FDD, MDD, ADD, ...) has been expanded with a new one: SDD — Spec-Driven Development.
 
 SDD has emerged this year thanks to the rapid development of software technologies using artificial intelligence, which, in turn, has been driven by the even more explosive growth of the LLM industry.
 
@@ -45,7 +45,7 @@ I hope that someone will find something interesting and useful in these publicat
     excerpt: "The 'Vibe Coding' boom, fueled by tools like Lovable and Replit, is great for quick MVPs, but the real question is scalability. We're wondering whether LLMs can move from 'wow effects' to managing the long-term growth and maintenance of complex brownfield projects.",
     content: `## Vibe Coding: Euphoria, Expectations and Questions
 
-The emergence of the term Vibe Coding (coined by Andrej Karpathy) at the beginning of this year (2025) and the endless stream of demonstrations showing the rapid creation of web applications using AI services like Lovable, Bolt, Replit, etc., were likely met with mixed feelings by many.
+The emergence of the term Vibe Coding (coined by Andrej Karpathy) at the beginning of this — 2025 — year and the endless stream of demonstrations showing the rapid creation of web applications using AI services like Lovable, Bolt, Replit, etc., were likely met with mixed feelings by many.
 
 On one hand, there was undeniable progress: nothing like this had been seen before.
 On the other hand, the uniformity of these examples was very unsettling.
@@ -202,9 +202,9 @@ const ruPosts: BlogPost[] = [
               Это введение в серию статей о нашем раннем опыте и лучших практиках этого многообещающего подхода.`,
     content: `В этом году и без того длинный список "-DD" аббревиатур подходов к разработке ПО(TDD, DDD, BDD, FDD, MDD, ADD, ...) пополнился еще одной: SDD — Spec-Driven Development.
 
-SDD появился в этом(2025) году благодаря бурному развитию программных технологий с использованием искусственного интеллекта, которое, в свою очередь, было обусловлено еще более взрывным ростом индустрии LLM.
+SDD появился в этом — 2025 — году благодаря бурному развитию программных технологий с использованием искусственного интеллекта, которое, в свою очередь, было обусловлено еще более взрывным ростом индустрии LLM.
 
-На самом деле, SDD — это больше, чем просто подход. Это уже новая парадигма создания программных продуктов, которая существенно меняет многие привычные процессы.
+На самом деле, SDD это больше, чем просто подход. Это уже новая парадигма создания программных продуктов, которая существенно меняет многие привычные процессы.
 
 Коротко говоря, суть SDD заключается в использовании моделей искусственного интеллекта для выполнения рутинных задач по кодированию и смежных активностей на основе заданных спецификаций.
 
@@ -230,7 +230,7 @@ SDD появился в этом(2025) году благодаря бурном�
     excerpt: "Вайб-кодинг, подпитываемый инструментами вроде Lovable и Replit, отлично подходит для быстрой проверки идей и создания прототипов, но к нему есть и вопросы. Например, смогут ли современные ИИ-агенты наряду с бесконечными 'вау-эффектами' показывать способность управления развитием и поддержкой сложных долгоживущих проектов?",
     content: `## Vibe Coding: эйфория, ожидания и вопросы
 
-Появление термина Vibe Coding, введённого Андреем Карпаты в начале этого года(2025) и бесконечный поток демонстраций быстрого создания веб-приложений с использованием AI-сервисов, таких как Lovable, Bolt, Replit и т.д., сообщество разработчиков встретило со смешанными чувствами.
+Появление термина Vibe Coding, введённого Андреем Карпаты в начале этого — 2025 — года и бесконечный поток демонстраций быстрого создания веб-приложений с использованием AI-сервисов, таких как Lovable, Bolt, Replit и т.д., сообщество разработчиков встретило со смешанными чувствами.
 
 С одной стороны, прогресс был неоспорим: ничего подобного раньше никто не видел. С другой стороны, однообразие подобных примеров настораживало.
 
