@@ -3,11 +3,13 @@ import { Calendar, Clock, ArrowLeft } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import ReactMarkdown from 'react-markdown';
-import { blogPosts } from '@/data/blogPosts';
+import { getBlogPosts } from '@/data/blogPosts';
+import { useTranslation } from 'react-i18next';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
-  const post = blogPosts.find(p => p.id === id);
+  const { i18n } = useTranslation();
+  const post = getBlogPosts(i18n.language).find(p => p.id === id);
 
   if (!post) {
     return <Navigate to="/blog" replace />;
@@ -30,11 +32,11 @@ const BlogPost = () => {
             <Badge variant="secondary" className="text-sm">{post.category}</Badge>
             {post.featured && <Badge variant="outline" className="text-sm">Featured</Badge>}
           </div>
-          
+
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             {post.title}
           </h1>
-          
+
           <p className="text-xl text-muted-foreground mb-6">
             {post.excerpt}
           </p>
@@ -77,7 +79,7 @@ const BlogPost = () => {
                 <strong className="font-semibold text-primary">{children}</strong>
               ),
               a: ({ href, children }) => (
-                <a 
+                <a
                   href={href}
                   className="text-primary font-medium underline decoration-primary/30 underline-offset-4 hover:decoration-primary hover:text-primary/80 transition-all duration-200"
                   target={href?.startsWith('http') ? '_blank' : undefined}

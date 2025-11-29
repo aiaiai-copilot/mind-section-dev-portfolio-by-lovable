@@ -7,14 +7,15 @@ export interface BlogPost {
   readTime: string;
   category: string;
   featured: boolean;
+  language: 'en' | 'ru';
 }
 
-export const blogPosts: BlogPost[] = [
+const enPosts: BlogPost[] = [
   {
     id: "sdd-intro",
     title: "SDD shifts the paradigm",
     excerpt: "SDD (Spec-Driven Development), a paradigm where LLMs handle routine coding based on specifications. This is our intro to a series sharing our early experience and best practices for this transformative approach.",
-    content: `This year, the already long list of "-DD" abbreviations for software development approaches (TDD, DDD, BDD, FDD, MDD, ADD, ...) has been expanded with a new one: **SDD - Spec-Driven Development**.
+    content: `This year, the already long list of "-DD" abbreviations for software development approaches (TDD, DDD, BDD, FDD, MDD, ADD, ...) has been expanded with a new one: **SDD-Spec-Driven Development**.
 
 SDD has emerged this year thanks to the rapid development of software technologies using artificial intelligence, which, in turn, has been driven by the even more explosive growth of the LLM industry.
 
@@ -35,7 +36,8 @@ I hope that someone will find something interesting and useful in these publicat
     date: "2025-10-13",
     readTime: "1 min read",
     category: "SDD",
-    featured: true
+    featured: true,
+    language: 'en'
   },
   {
     id: "sdd-backstory",
@@ -64,7 +66,8 @@ Ultimately, people wanted to see something more serious than mere "wow effects,"
     date: "2025-10-14",
     readTime: "1 min read",
     category: "SDD",
-    featured: true
+    featured: true,
+    language: 'en'
   },
   {
     id: "sdd-first-experience",
@@ -90,7 +93,8 @@ This is how we developed our mini-logger, and it was during this process that I 
     date: "2025-10-15",
     readTime: "1 min read",
     category: "SDD",
-    featured: false
+    featured: false,
+    language: 'en'
   },
   {
     id: "api-documentation-first",
@@ -105,7 +109,8 @@ Writing documentation before code might seem backwards, but it's one of the most
     date: "2025-10-10",
     readTime: "5 min read",
     category: "API Design",
-    featured: false
+    featured: false,
+    language: 'en'
   },
   {
     id: "react-performance-tips",
@@ -120,7 +125,8 @@ While memoization helps, there are many other techniques that can significantly 
     date: "2025-10-08",
     readTime: "7 min read",
     category: "Frontend",
-    featured: false
+    featured: false,
+    language: 'en'
   },
   {
     id: "testing-strategies",
@@ -135,7 +141,8 @@ Learn how to create a testing pyramid that actually works for your team and proj
     date: "2025-10-05",
     readTime: "8 min read",
     category: "Methodology",
-    featured: false
+    featured: false,
+    language: 'en'
   },
   {
     id: "typescript-patterns",
@@ -150,7 +157,8 @@ Discover the patterns that make TypeScript truly shine in large codebases.
     date: "2025-10-01",
     readTime: "6 min read",
     category: "Frontend",
-    featured: false
+    featured: false,
+    language: 'en'
   },
   {
     id: "microservices-communication",
@@ -165,7 +173,8 @@ Understanding the tradeoffs between synchronous and asynchronous communication i
     date: "2025-09-28",
     readTime: "10 min read",
     category: "API Design",
-    featured: false
+    featured: false,
+    language: 'en'
   },
   {
     id: "code-review-best-practices",
@@ -180,6 +189,103 @@ Learn how to make code reviews constructive, efficient, and educational for your
     date: "2025-09-25",
     readTime: "4 min read",
     category: "Methodology",
-    featured: false
+    featured: false,
+    language: 'en'
   }
 ];
+
+const ruPosts: BlogPost[] = [
+  {
+    id: "sdd-intro",
+    title: "SDD: Смена парадигмы",
+    excerpt: `SDD (Spec-Driven Development) — парадигма разработки программ, при которой рутинное кодирование выполняется LLM на основе заданных спецификаций.
+              Это введение в серию статей о нашем раннем опыте и лучших практиках этого многообещающего подхода.`,
+    content: `В этом году и без того длинный список "-DD" аббревиатур подходов к разработке ПО(TDD, DDD, BDD, FDD, MDD, ADD, ...) пополнился еще одной: ** SDD-Spec-Driven Development**.
+
+SDD появился в этом(2025) году благодаря бурному развитию программных технологий с использованием искусственного интеллекта, которое, в свою очередь, было обусловлено еще более взрывным ростом индустрии LLM.
+
+На самом деле, SDD — это больше, чем просто подход; это новая парадигма создания программных продуктов, которая существенно меняет многие привычные процессы.
+
+Коротко говоря, суть SDD заключается в использовании моделей искусственного интеллекта для выполнения рутинных задач по кодированию и смежных активностей на основе заданных спецификаций.
+
+Этот вводный пост является предисловием к серии публикаций, выпущенных по горячим следам разработки прототипа небольшого веб-приложения с использованием SDD. Для целей этой серии ни название, ни конкретная функциональность приложения не имеют значения, но для ясности условно будем называть его **"SomeApp"**.
+
+Главная цель этой серии — поделиться моим собственным опытом работы в парадигме SDD.
+Кроме того, это попытка внести вклад в коллективный опыт и лучшие практики, разрабатываемые сообществом пионеров этого направления.
+
+Надеюсь, что в этих публикациях многие найдут что-то интересное и полезное для себя.
+
+---
+  [Далее](sdd-backstory)
+    `,
+    date: "2025-10-13",
+    readTime: "1 мин",
+    category: "SDD",
+    featured: true,
+    language: 'ru'
+  },
+  {
+    id: "sdd-backstory",
+    title: "Предыстория",
+    excerpt: "Вайб-кодинг, подпитываемый инструментами вроде Lovable и Replit, отлично подходит для быстрой проверки идей и создания прототипов, но к нему есть и вопросы. Могут ли современные ИИ-агенты наряду с бесконечными 'вау-эффектами' показывать способность управления развитием и поддержкой сложных долгоживущих проектов.",
+    content: `## Vibe Coding: эйфория, ожидания и вопросы
+
+Появление термина Vibe Coding, введённого Андреем Карпаты в начале этого года(2025) и бесконечный поток демонстраций быстрого создания веб-приложений с использованием AI-сервисов, таких как Lovable, Bolt, Replit и т.д., было встречено со смешанными чувствами.
+
+С одной стороны, прогресс был неоспорим: ничего подобного раньше никто не видел. С другой стороны, однообразие подобных примеров настораживало.
+
+Каждый раз демонстрировалось очень быстрое создание — за десять-двадцать минут — простых, но полностью функциональных приложений на основе прямых требований в один, максимум в два абзаца, часто даже записанных голосом.
+Очевидно, что такие инструменты идеально подходили для небольших сайтов, прототипов веб-приложений и самых простых MVP.
+
+Однако никто не демонстрировал того, что может произойти с этими приложениями после: насколько они пригодны для ** дальнейшего роста **, и в какой степени эти или любые другие AI-инструменты могут поддерживать такой рост.
+
+Сможем ли мы сохранить текущий темп разработки или даже хотя бы не сильно замедлиться в процессе дальнейшей эволюции продукта, или нам придется вернуться к старому доброму методу "сделай сам" ?
+
+  Не говоря уже о вопросе, а можно ли этот чудесный ИИ-инструментарий как-то применить к уже существующим, так называемым ** brownfield-проектам **, из которых состоят практически все существующие кодовые базы.
+
+Как бы то ни было, люди хотят видеть уже что-то более существенное, чем одни только "вау-эффекты", которыми, очевидно, долго сыт не будешь. Вопрос о возможности использования LLM для управления долгосрочными процессами разработки ПО начинает подниматься всё чаще и серьёзнее.
+
+---
+  [Назад](sdd-intro) | [Далее](sdd-first-experience)
+    `,
+    date: "2025-10-14",
+    readTime: "1 мин",
+    category: "SDD",
+    featured: true,
+    language: 'ru'
+  },
+  {
+    id: "sdd-first-experience",
+    title: "Первый опыт SDD",
+    excerpt: "Относясь к контрактным тестам как к живым спецификациям в цикле TDD с AI, мы пришли к пониманию того, что спецификации — лучший способ управлять и контролировать код, генерируемый LLM.",
+    content: `[Назад](sdd-backstory)
+
+Стоит упомянуть, что к тому времени, когда Vibe Coding успел набрать популярность, у меня уже был небольшой опыт программирования с использованием LLM и, что довольно необычно, сразу в коммерческой разработке.
+
+Еще в 2023 году на одном из проектов компании нам понадобилось разработать небольшой логгер для клиентского приложения.Тогда не хотелось возиться с подключением тяжелых инструментов вроде Sentry, поэтому было решено разработать свой собственный с помощью недавно вышедшего, но уже нашумевшего ChatGPT 3.5.Разумеется, что это подразумевало копирование и вставку кода из чата в IDE, поскольку других вариантов тогда ещё не было. Но и без того всё происходящее уже воспринималось как некое чудо.
+
+Притом, что задача сама по себе была несложной, основную нагрузку по проверке её реализации интересно было с ревью кода переложить на автотесты. И это себя оправдало: на пару с моделью проверку получилось осуществить в режиме TDD — в классическом цикле Red-Green-Refactor. В результате чего ручной проверки кода, сгенерированного LLM, потребовалось совсем чуть-чуть, а запусков тестов, напротив, было довольно много. В итоге все прошло хорошо: логгер был реализован и успешно развернут на проде.
+
+Здесь стоит отметить, что хорошие тесты — контрактные тесты, то есть те, которые создаются для проверки не всей кодовой базы, а только её ключевой части — контрактов, реализуемых программой. Притом, что контракт может быть задокументирован, он также может быть зафиксирован и в контрактных тестах, которые в этом случае сами становятся уже не просто тестами, а живой спецификацией.
+
+Таким образом, когда все тесты в TDD основаны на контрактах, разработка становится не просто Test-Driven, а, в определённом смысле уже и Specification-First Development. А если при этом используются ещё и инструменты искусственного интеллекта, то в результате получается именно то, что сегодня известно как Spec-Driven Development.
+
+Именно так был разработан вышеупомянутый мини-логгер, и именно в процессе этой разработки впервые стало понятно, что заранее определенные спецификации можно использовать для того, чтобы, во-первых, избегать ошибок программирования, совершаемых LLM, а, во-вторых, контролировать их(LLM) поведение.
+
+---
+  [Назад](sdd-backstory)
+    `,
+    date: "2025-10-15",
+    readTime: "1 мин",
+    category: "SDD",
+    featured: false,
+    language: 'ru'
+  }
+];
+
+export const getBlogPosts = (language: string = 'en'): BlogPost[] => {
+  return language === 'ru' ? ruPosts : enPosts;
+};
+
+// Keep direct export for backward compatibility if needed, defaulting to English
+export const blogPosts = enPosts;

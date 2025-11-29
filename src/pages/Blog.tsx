@@ -2,7 +2,7 @@ import developerPhoto from '@/assets/developer-photo.png';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { blogPosts } from '@/data/blogPosts';
+import { getBlogPosts } from '@/data/blogPosts';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 const Blog = () => {
   const [searchParams] = useSearchParams();
   const [showAllPosts, setShowAllPosts] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     if (searchParams.get('showAll') === 'true') {
@@ -19,12 +19,13 @@ const Blog = () => {
     }
   }, [searchParams]);
   const categories = ["All", "Case Study", "Methodology", "API Design", "Frontend"];
-  
-  const featuredPosts = blogPosts.filter(post => post.featured);
-  const allRegularPosts = blogPosts
+
+  const currentPosts = getBlogPosts(i18n.language);
+  const featuredPosts = currentPosts.filter(post => post.featured);
+  const allRegularPosts = currentPosts
     .filter(post => !post.featured)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  
+
   const regularPosts = showAllPosts ? allRegularPosts : allRegularPosts.slice(0, 3);
 
   return (
@@ -33,9 +34,9 @@ const Blog = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <div className="flex justify-center mb-8">
-            <img 
-              src={developerPhoto} 
-              alt="Developer Photo" 
+            <img
+              src={developerPhoto}
+              alt="Developer Photo"
               className="w-48 md:w-56 h-auto rounded-lg border-4 border-primary/20 shadow-elegant"
             />
           </div>
@@ -125,11 +126,11 @@ const Blog = () => {
               </Card>
             ))}
           </div>
-          
+
           {allRegularPosts.length > 3 && !showAllPosts && (
             <div className="mt-8 text-center">
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 onClick={() => setShowAllPosts(true)}
                 className="group/btn"
               >
@@ -138,12 +139,12 @@ const Blog = () => {
               </Button>
             </div>
           )}
-          
+
           {/* Floating Show Less Button */}
           {showAllPosts && (
             <div className="fixed bottom-8 right-8 z-50 animate-fade-in">
-              <Button 
-                variant="default" 
+              <Button
+                variant="default"
                 size="lg"
                 onClick={() => {
                   setShowAllPosts(false);
