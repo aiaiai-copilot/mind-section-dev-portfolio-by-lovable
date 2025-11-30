@@ -40,11 +40,20 @@ const Home = () => {
             dangerouslySetInnerHTML={{ __html: t('home.hero.tagline') }}
           />
 
-          <div className="bg-gradient-subtle p-8 rounded-2xl shadow-card mb-16 animate-slide-up">
+          <div className="bg-gradient-subtle p-8 rounded-2xl shadow-card mb-8 animate-slide-up">
             <h3 className="text-2xl font-bold text-primary mb-4">{t('home.sdd.title')}</h3>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               {t('home.sdd.description')}
             </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            {(t('home.benefits', { returnObjects: true }) as Array<{ title: string; description: string; }>).map((benefit, index) => (
+              <div key={index} className="bg-card p-6 rounded-xl shadow-card hover-scale">
+                <h4 className="text-lg font-semibold text-primary mb-3">{benefit.title}</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">{benefit.description}</p>
+              </div>
+            ))}
           </div>
 
           <Link to="/contact">
