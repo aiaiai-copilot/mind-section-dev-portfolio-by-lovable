@@ -1,3 +1,4 @@
+import developerPhoto from '@/assets/developer-photo.png';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -24,9 +25,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 text-center animate-fade-in">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6">
-            {t('home.hero.title')}
-          </h1>
+          <div className="flex justify-center mb-8">
+            <img
+              src={developerPhoto}
+              alt="Developer Photo"
+              className="w-48 md:w-56 h-auto rounded-lg border-4 border-primary/20 shadow-elegant"
+            />
+          </div>
           <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-4">
             {t('home.hero.subtitle')}
           </h2>
