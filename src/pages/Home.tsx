@@ -29,7 +29,7 @@ const Home = () => {
             <img
               src={developerPhoto}
               alt="Developer Photo"
-              className="w-48 md:w-56 h-auto rounded-lg border-4 border-primary/20 shadow-elegant"
+              className="w-32 md:w-40 h-auto rounded-lg border-4 border-primary/20 shadow-elegant"
             />
           </div>
           <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-4">
