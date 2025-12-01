@@ -43,6 +43,18 @@ const Portfolio = () => {
       github: "/portfolio/coming-soon",
       live: "/portfolio/coming-soon",
       featured: false
+    },
+    {
+      title: t('portfolio.projects.portfolio.title'),
+      description: t('portfolio.projects.portfolio.description'),
+      longDescription: t('portfolio.projects.portfolio.longDescription'),
+      image: "/placeholder.svg",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "i18n"],
+      features: t('portfolio.projects.portfolio.features', { returnObjects: true }) as string[],
+      metrics: t('portfolio.projects.portfolio.metrics', { returnObjects: true }) as Record<string, string>,
+      github: "https://github.com/aiaiai-copilot/mind-section-dev-portfolio-by-lovable",
+      live: "/",
+      featured: false
     }
   ];
 
