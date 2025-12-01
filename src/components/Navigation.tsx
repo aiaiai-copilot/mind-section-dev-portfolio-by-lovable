@@ -1,13 +1,15 @@
 import { Button } from '@/components/ui/button';
-import { Menu, X, Languages } from 'lucide-react';
+import { Menu, X, Languages, Moon, Sun } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useTheme } from './theme-provider';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const { t, i18n } = useTranslation();
+  const { theme, setTheme } = useTheme();
 
   const navigation = [
     { name: t('navigation.home'), href: '/' },
@@ -21,6 +23,10 @@ const Navigation = () => {
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'ru' : 'en';
     i18n.changeLanguage(newLang);
+  };
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
   return (
@@ -48,6 +54,15 @@ const Navigation = () => {
             <Button
               variant="ghost"
               size="sm"
+              onClick={toggleTheme}
+              className="flex items-center"
+              title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
               onClick={toggleLanguage}
               className="flex items-center space-x-1"
               title={i18n.language === 'en' ? 'Switch to Russian' : 'Переключить на английский'}
@@ -59,6 +74,15 @@ const Navigation = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleTheme}
+              className="flex items-center"
+              title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </Button>
             <Button
               variant="ghost"
               size="sm"
