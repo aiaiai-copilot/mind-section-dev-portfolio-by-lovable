@@ -24,7 +24,7 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="py-20 px-4 text-center animate-fade-in">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="flex justify-center mb-8">
             <img
               src={developerPhoto}
@@ -36,15 +36,24 @@ const Home = () => {
             {t('home.hero.subtitle')}
           </h2>
           <p
-            className="text-xl md:text-2xl text-muted-foreground mb-12"
+            className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto"
             dangerouslySetInnerHTML={{ __html: t('home.hero.tagline') }}
           />
 
-          <div className="bg-gradient-subtle p-8 rounded-2xl shadow-card mb-16 animate-slide-up">
+          <div className="bg-gradient-subtle p-8 rounded-2xl shadow-card mb-8 animate-slide-up max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-primary mb-4">{t('home.sdd.title')}</h3>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               {t('home.sdd.description')}
             </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            {(t('home.benefits', { returnObjects: true }) as Array<{ title: string; description: string; }>).map((benefit, index) => (
+              <div key={index} className="bg-card p-6 rounded-xl shadow-card hover-scale h-full">
+                <h4 className="text-lg font-semibold text-primary mb-3">{benefit.title}</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">{benefit.description}</p>
+              </div>
+            ))}
           </div>
 
           <Link to="/contact">

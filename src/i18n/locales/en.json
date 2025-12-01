@@ -15,8 +15,26 @@
     },
     "sdd": {
       "title": "Spec-Driven Development",
-      "description": "Building web applications designed to last — with robust architecture, comprehensive documentation, thorough contract testing, and maintainable code that enables rapid onboarding for developers and AI-assisted tools alike"
+      "description": "At the core of every development stage lies a detailed specification — a source for AI and a guide for humans. This guarantees implementation accuracy, relevance, and completeness of documentation at all stages of the product lifecycle."
     },
+    "benefits": [
+      {
+        "title": "Technical Partner",
+        "description": "Full development cycle support: from requirements analysis and architecture design to writing code and server configuration."
+      },
+      {
+        "title": "Transparency",
+        "description": "Real-time progress: regular demos, clear reports, no 'black boxes'."
+      },
+      {
+        "title": "No Vendor Lock-in",
+        "description": "No dependency on a single developer. You receive fully transferable code and infrastructure that you own 100%."
+      },
+      {
+        "title": "AI-ready Architecture",
+        "description": "Documentation, architecture, and prompts are optimized for easy onboarding of new team members and rapid project development with AI tools."
+      }
+    ],
     "cta": {
       "button": "Start Your Project"
     }
