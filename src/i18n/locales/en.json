@@ -1,5 +1,6 @@
 {
   "navigation": {
+    "brand": "Alexander Lapygin",
     "home": "Home",
     "about": "About",
     "showcase": "Showcase",
@@ -9,7 +10,7 @@
   },
   "home": {
     "hero": {
-      "title": "Mind/Section",
+      "title": "Alexander Lapygin",
       "subtitle": "Full-stack Development",
       "tagline": "Sustainable code. Clear architecture.<br />Documentation that works — for people and tools"
     },
@@ -70,8 +71,8 @@
       "architecture": {
         "category": "Architecture",
         "technologies": [
-          "Feature-Sliced Design",
           "Clean architecture",
+          "Feature-Sliced Design",
           "REST APIs",
           "Serverless",
           "и др."
@@ -110,7 +111,7 @@
           ]
         },
         {
-          "role": "Senior Frontend Developer / Team Lead",
+          "role": "Full-stack Developer / Team Lead",
           "company": "Major Financial Institution",
           "period": "2000 — 2025",
           "achievements": [
@@ -367,6 +368,6 @@
       ]
     },
     "connect": "Contacts & Profiles",
-    "copyright": "© 2025 Mind/Section. All rights reserved."
+    "copyright": "© 2025 Alexander Lapygin. All rights reserved."
   }
 }
