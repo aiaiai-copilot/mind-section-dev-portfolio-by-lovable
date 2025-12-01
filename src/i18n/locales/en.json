@@ -15,7 +15,7 @@
       "tagline": "Sustainable code. Clear architecture.<br />Documentation that works — for people and tools"
     },
     "sdd": {
-      "title": "Spec-Driven Development",
+      "title": "AI- and Spec-Driven Development",
       "description": "At the core of every development stage lies a detailed specification — a source for AI and a guide for humans. This guarantees implementation accuracy, relevance, and completeness of documentation at all stages of the product lifecycle."
     },
     "benefits": [
@@ -80,11 +80,12 @@
       "development": {
         "category": "Development",
         "technologies": [
+          "AI-Driven Development",
           "Spec-Driven Development",
-          "Test-Driven Development",
           "Contract-First Approach",
-          "Docker",
+          "Test-Driven Development",
           "Git",
+          "Docker",
           "CI/CD",
           "Documentation",
           "Integration with the LLM API",
@@ -100,11 +101,11 @@
       "title": "Professional Experience",
       "jobs": [
         {
-          "role": "Full-stack Developer, SDD Expert",
+          "role": "Full-stack Developer, AI- & Spec-Driven Development Expert",
           "company": "Mind/Section",
           "period": "2025 — Present",
           "achievements": [
-            "Designing and implementing web applications using Spec-Driven Development",
+            "Designing and implementing web applications using AI- & Spec-Driven Development",
             "Integrating AI tools into the development workflow to enhance speed and quality",
             "Continuous research into emerging AI tools and AI-assisted development methodologies"
           ]
@@ -201,7 +202,7 @@
     "title": "Portfolio",
     "featured": "Featured Projects",
     "portfolioSites": "Portfolio Sites",
-    "additional": "Web-applications",
+    "additional": "SaaS",
     "projects": {
       "livingTagsPrototype": {
         "title": "Living Tags Prototype",
@@ -263,7 +264,7 @@
       },
       "portfolio": {
         "title": "Developer Portfolio",
-        "description": "This website. A showcase of my work and skills, built with modern web technologies.",
+        "description": "This website. A showcase of my work and skills, built with modern web- and AI-technologies.",
         "longDescription": "A personal portfolio website designed to demonstrate my technical expertise and design capabilities. Built with React, TypeScript, and Tailwind CSS, it features a clean, responsive design and internationalization support.",
         "features": [
           "Responsive Design",
@@ -283,7 +284,7 @@
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Insights on Spec-Driven Development, Software Architecture, and Modern Web Technologies",
+    "subtitle": "Insights on AI- & Spec-Driven Development, Software Architecture, and Modern Web Technologies",
     "featured": "Featured Posts",
     "allPosts": "All Posts",
     "readMore": "Read More",
@@ -360,29 +361,29 @@
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "timeline": {
-        "question": "What's your typical project timeline?",
-        "answer": "Most projects range from 1-2 months, depending on complexity. I provide detailed timelines in the specification phase."
+      "start": {
+        "question": "What is needed to start?",
+        "answer": "An idea or a general description of the task is enough. I help with formalizing requirements, drafting technical specifications, and designing the solution."
       },
-      "teams": {
-        "question": "Do you work with existing teams?",
-        "answer": "Absolutely. I often collaborate with internal teams, providing architecture guidance, refactoring support, and mentoring on best practices."
+      "deliverables": {
+        "question": "What does the client get?",
+        "answer": "A completely self-sufficient project: source code, deployed infrastructure, and comprehensive documentation adapted for LLM (via SDD). An asset that the client owns 100%."
       },
-      "technologies": {
-        "question": "What technologies do you specialize in?",
-        "answer": "Mainly React, TypeScript, Node.js, and PostgreSQL — but I always pick the right tools for the job."
+      "legacy": {
+        "question": "Do you work with existing code (improvements, bug fixes)?",
+        "answer": "My specialization is building new projects and autonomous microservices from scratch. This guarantees maximum speed and quality. Support for legacy code is usually not considered unless it involves a complete rewrite."
       }
     }
   },
   "footer": {
-    "tagline": "Crafting maintainable web experiences through Spec-Driven Development. Reliable code that grows with your business.",
+    "tagline": "Crafting maintainable web experiences through AI- & Spec-Driven Development.",
     "services": {
       "title": "Services",
       "list": [
         "Web Application Architecture",
         "Full-Stack Development",
         "Technical Documentation",
-        "Spec-Driven Development Consulting"
+        "AI- & Spec-Driven Development Consulting and Mentoring"
       ]
     },
     "connect": "Contacts & Profiles",

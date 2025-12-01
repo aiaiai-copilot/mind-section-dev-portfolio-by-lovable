@@ -14,8 +14,8 @@ const Navigation = () => {
   const navigation = [
     { name: t('navigation.home'), href: '/' },
     { name: t('navigation.about'), href: '/about' },
-    { name: t('navigation.showcase'), href: '/showcase' },
     { name: t('navigation.portfolio'), href: '/portfolio' },
+    { name: t('navigation.showcase'), href: '/showcase' },
     { name: t('navigation.blog'), href: '/blog' },
     { name: t('navigation.contact'), href: '/contact' },
   ];

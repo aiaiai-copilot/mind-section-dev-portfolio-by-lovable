@@ -96,102 +96,102 @@ This is how we developed our mini-logger, and it was during this process that I 
     featured: false,
     language: 'en'
   },
-  {
-    id: "api-documentation-first",
-    title: "Why Your API Needs Documentation-First Development",
-    excerpt: "Learn how writing API documentation before code leads to better design decisions, fewer bugs, and happier developers. A practical guide to documentation-driven development.",
-    content: `## The Documentation-First Approach
+  //   {
+  //     id: "api-documentation-first",
+  //     title: "Why Your API Needs Documentation-First Development",
+  //     excerpt: "Learn how writing API documentation before code leads to better design decisions, fewer bugs, and happier developers. A practical guide to documentation-driven development.",
+  //     content: `## The Documentation-First Approach
 
-Writing documentation before code might seem backwards, but it's one of the most effective ways to build maintainable APIs. Here's why it works.
+  // Writing documentation before code might seem backwards, but it's one of the most effective ways to build maintainable APIs. Here's why it works.
 
----
-`,
-    date: "2025-10-10",
-    readTime: "5 min read",
-    category: "API Design",
-    featured: false,
-    language: 'en'
-  },
-  {
-    id: "react-performance-tips",
-    title: "React Performance Optimization: Beyond Memoization",
-    excerpt: "Discover advanced techniques for optimizing React applications that go beyond the usual useMemo and useCallback advice.",
-    content: `## Advanced React Performance
+  // ---
+  // `,
+  //     date: "2025-10-10",
+  //     readTime: "5 min read",
+  //     category: "API Design",
+  //     featured: false,
+  //     language: 'en'
+  //   },
+  //   {
+  //     id: "react-performance-tips",
+  //     title: "React Performance Optimization: Beyond Memoization",
+  //     excerpt: "Discover advanced techniques for optimizing React applications that go beyond the usual useMemo and useCallback advice.",
+  //     content: `## Advanced React Performance
 
-While memoization helps, there are many other techniques that can significantly improve your React app's performance.
+  // While memoization helps, there are many other techniques that can significantly improve your React app's performance.
 
----
-`,
-    date: "2025-10-08",
-    readTime: "7 min read",
-    category: "Frontend",
-    featured: false,
-    language: 'en'
-  },
-  {
-    id: "testing-strategies",
-    title: "Testing Strategies for Modern Web Apps",
-    excerpt: "A comprehensive guide to building a robust testing strategy that balances unit, integration, and e2e tests effectively.",
-    content: `## Building a Testing Strategy
+  // ---
+  // `,
+  //     date: "2025-10-08",
+  //     readTime: "7 min read",
+  //     category: "Frontend",
+  //     featured: false,
+  //     language: 'en'
+  //   },
+  //   {
+  //     id: "testing-strategies",
+  //     title: "Testing Strategies for Modern Web Apps",
+  //     excerpt: "A comprehensive guide to building a robust testing strategy that balances unit, integration, and e2e tests effectively.",
+  //     content: `## Building a Testing Strategy
 
-Learn how to create a testing pyramid that actually works for your team and project.
+  // Learn how to create a testing pyramid that actually works for your team and project.
 
----
-`,
-    date: "2025-10-05",
-    readTime: "8 min read",
-    category: "Methodology",
-    featured: false,
-    language: 'en'
-  },
-  {
-    id: "typescript-patterns",
-    title: "TypeScript Design Patterns for Scalable Applications",
-    excerpt: "Explore essential TypeScript patterns that help you build type-safe, maintainable applications at scale.",
-    content: `## TypeScript Patterns
+  // ---
+  // `,
+  //     date: "2025-10-05",
+  //     readTime: "8 min read",
+  //     category: "Methodology",
+  //     featured: false,
+  //     language: 'en'
+  //   },
+  //   {
+  //     id: "typescript-patterns",
+  //     title: "TypeScript Design Patterns for Scalable Applications",
+  //     excerpt: "Explore essential TypeScript patterns that help you build type-safe, maintainable applications at scale.",
+  //     content: `## TypeScript Patterns
 
-Discover the patterns that make TypeScript truly shine in large codebases.
+  // Discover the patterns that make TypeScript truly shine in large codebases.
 
----
-`,
-    date: "2025-10-01",
-    readTime: "6 min read",
-    category: "Frontend",
-    featured: false,
-    language: 'en'
-  },
-  {
-    id: "microservices-communication",
-    title: "Microservices Communication: Patterns and Pitfalls",
-    excerpt: "An in-depth look at different communication patterns in microservices architecture and how to avoid common mistakes.",
-    content: `## Microservices Communication
+  // ---
+  // `,
+  //     date: "2025-10-01",
+  //     readTime: "6 min read",
+  //     category: "Frontend",
+  //     featured: false,
+  //     language: 'en'
+  //   },
+  //   {
+  //     id: "microservices-communication",
+  //     title: "Microservices Communication: Patterns and Pitfalls",
+  //     excerpt: "An in-depth look at different communication patterns in microservices architecture and how to avoid common mistakes.",
+  //     content: `## Microservices Communication
 
-Understanding the tradeoffs between synchronous and asynchronous communication in distributed systems.
+  // Understanding the tradeoffs between synchronous and asynchronous communication in distributed systems.
 
----
-`,
-    date: "2025-09-28",
-    readTime: "10 min read",
-    category: "API Design",
-    featured: false,
-    language: 'en'
-  },
-  {
-    id: "code-review-best-practices",
-    title: "Code Review Best Practices for Teams",
-    excerpt: "Transform your code review process from a bottleneck into a powerful tool for knowledge sharing and quality improvement.",
-    content: `## Effective Code Reviews
+  // ---
+  // `,
+  //     date: "2025-09-28",
+  //     readTime: "10 min read",
+  //     category: "API Design",
+  //     featured: false,
+  //     language: 'en'
+  //   },
+  //   {
+  //     id: "code-review-best-practices",
+  //     title: "Code Review Best Practices for Teams",
+  //     excerpt: "Transform your code review process from a bottleneck into a powerful tool for knowledge sharing and quality improvement.",
+  //     content: `## Effective Code Reviews
 
-Learn how to make code reviews constructive, efficient, and educational for your entire team.
+  // Learn how to make code reviews constructive, efficient, and educational for your entire team.
 
----
-`,
-    date: "2025-09-25",
-    readTime: "4 min read",
-    category: "Methodology",
-    featured: false,
-    language: 'en'
-  }
+  // ---
+  // `,
+  //     date: "2025-09-25",
+  //     readTime: "4 min read",
+  //     category: "Methodology",
+  //     featured: false,
+  //     language: 'en'
+  //   }
 ];
 
 const ruPosts: BlogPost[] = [

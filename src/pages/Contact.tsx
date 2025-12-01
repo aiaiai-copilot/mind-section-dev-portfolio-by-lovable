@@ -307,16 +307,16 @@ const Contact = () => {
               <CardContent>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-medium text-primary mb-1">{t('contact.faq.legacy.question')}</h4>
-                    <p className="text-sm text-muted-foreground">{t('contact.faq.legacy.answer')}</p>
-                  </div>
-                  <div>
                     <h4 className="font-medium text-primary mb-1">{t('contact.faq.start.question')}</h4>
                     <p className="text-sm text-muted-foreground">{t('contact.faq.start.answer')}</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-primary mb-1">{t('contact.faq.deliverables.question')}</h4>
                     <p className="text-sm text-muted-foreground">{t('contact.faq.deliverables.answer')}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-primary mb-1">{t('contact.faq.legacy.question')}</h4>
+                    <p className="text-sm text-muted-foreground">{t('contact.faq.legacy.answer')}</p>
                   </div>
                 </div>
               </CardContent>
