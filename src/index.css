@@ -9,23 +9,29 @@ All colors MUST be HSL. Professional blue theme for maintainable development foc
 @layer base {
   :root {
     /* Core Color Palette */
-    --background: 207 100% 96%; /* #eff5fe - light blue background */
-    --foreground: 215 100% 16%; /* #042151 - dark blue text */
+    --background: 207 100% 96%;
+    /* #eff5fe - light blue background */
+    --foreground: 215 100% 16%;
+    /* #042151 - dark blue text */
 
-    --card: 0 0% 100%; /* pure white cards */
+    --card: 0 0% 100%;
+    /* pure white cards */
     --card-foreground: 215 100% 16%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 215 100% 16%;
 
-    --primary: 215 100% 16%; /* #042151 - main brand color */
+    --primary: 215 100% 16%;
+    /* #042151 - main brand color */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 20% 94%; /* light gray secondary background */
+    --secondary: 210 20% 94%;
+    /* light gray secondary background */
     --secondary-foreground: 215 100% 16%;
 
     --muted: 210 20% 94%;
-    --muted-foreground: 215 20% 50%; /* gray-blue muted text */
+    --muted-foreground: 215 20% 50%;
+    /* gray-blue muted text */
 
     --accent: 215 100% 16%;
     --accent-foreground: 0 0% 100%;
@@ -42,42 +48,49 @@ All colors MUST be HSL. Professional blue theme for maintainable development foc
     /* Professional Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(215 100% 16%), hsl(215 80% 25%));
     --gradient-subtle: linear-gradient(180deg, hsl(207 100% 98%), hsl(207 100% 96%));
-    
+
     /* Professional Shadows */
     --shadow-elegant: 0 20px 60px -15px hsl(215 100% 16% / 0.15);
     --shadow-card: 0 4px 20px -2px hsl(215 100% 16% / 0.08);
-    
+
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%; /* Very dark blue background */
-    --foreground: 210 40% 98%; /* Very light text */
+    --background: 222.2 84% 4.9%;
+    /* Very dark blue background */
+    --foreground: 210 40% 98%;
+    /* Very light text */
 
-    --card: 217.2 32.6% 12%; /* Lighter card background for better contrast */
+    --card: 217.2 32.6% 32%;
+    /* Lighter card background for better contrast */
     --card-foreground: 210 40% 98%;
 
     --popover: 217.2 32.6% 12%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%; /* Light primary color */
+    --primary: 210 40% 98%;
+    /* Light color for headings and text */
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 75%; /* Increased from 65.1% for better readability */
+    --muted-foreground: 215 20.2% 75%;
+    /* Increased from 65.1% for better readability */
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 210 40% 25%;
+    /* Darker color for buttons */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 20%; /* Slightly lighter border */
+    --border: 217.2 32.6% 20%;
+    /* Slightly lighter border */
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
     --sidebar-background: 240 5.9% 10%;
@@ -88,6 +101,9 @@ All colors MUST be HSL. Professional blue theme for maintainable development foc
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Override gradients for dark mode */
+    --gradient-subtle: linear-gradient(180deg, hsl(217.2, 32.6%, 20%), hsl(217.2, 32.6%, 15%));
   }
 }
 
@@ -120,6 +136,7 @@ All colors MUST be HSL. Professional blue theme for maintainable development foc
 }
 
 @layer components {
+
   /* Story Link Animation */
   .story-link {
     @apply relative inline-block;
@@ -146,6 +163,7 @@ All colors MUST be HSL. Professional blue theme for maintainable development foc
 }
 
 @layer utilities {
+
   /* Animation Classes */
   .animate-fade-in {
     animation: fade-in 0.6s ease-out;
@@ -160,6 +178,7 @@ All colors MUST be HSL. Professional blue theme for maintainable development foc
       opacity: 0;
       transform: translateY(20px);
     }
+
     100% {
       opacity: 1;
       transform: translateY(0);
@@ -171,6 +190,7 @@ All colors MUST be HSL. Professional blue theme for maintainable development foc
       opacity: 0;
       transform: translateY(40px);
     }
+
     100% {
       opacity: 1;
       transform: translateY(0);
