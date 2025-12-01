@@ -11,7 +11,7 @@
   "home": {
     "hero": {
       "title": "Alexander Lapygin",
-      "subtitle": "Full-stack Development",
+      "subtitle": "Web Application Development",
       "tagline": "Sustainable code. Clear architecture.<br />Documentation that works — for people and tools"
     },
     "sdd": {
@@ -45,7 +45,7 @@
     "description": "Web applications built to last — with explicit structure, thorough documentation, and code that's good maintainable by developers and AI alike",
     "technicalExpertise": {
       "title": "Technical Expertise",
-      "subtitle": "Full-stack development with focus on modern technologies"
+      "subtitle": "Web Application Development"
     },
     "skills": {
       "frontend": {
@@ -380,8 +380,7 @@
     "services": {
       "title": "Services",
       "list": [
-        "Web Application Architecture",
-        "Full-Stack Development",
+        "Web Application Development",
         "Technical Documentation",
         "AI- & Spec-Driven Development Consulting and Mentoring"
       ]
