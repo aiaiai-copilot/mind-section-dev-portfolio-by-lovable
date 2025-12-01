@@ -58,8 +58,8 @@ const Portfolio = () => {
     }
   ];
 
-  const featuredProjects = projects.filter(p => p.featured);
-  const otherProjects = projects.filter(p => !p.featured);
+  const portfolioSites = projects.filter(p => p.title === t('portfolio.projects.portfolio.title'));
+  const livingTagsProjects = projects.filter(p => p.title !== t('portfolio.projects.portfolio.title'));
 
   const ProjectCard = ({ project, featured = false }: { project: typeof projects[0], featured?: boolean }) => (
     <Card className={`shadow-elegant hover-scale border-0 ${featured ? 'md:col-span-2' : ''}`}>
@@ -142,23 +142,21 @@ const Portfolio = () => {
           </h1>
         </div>
 
-        {/* Featured Projects */}
-        {featuredProjects.length > 0 && (
-          <section className="mb-20">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">{t('portfolio.featured')}</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {featuredProjects.map((project, index) => (
-                <ProjectCard key={index} project={project} featured />
-              ))}
-            </div>
-          </section>
-        )}
+        {/* Portfolio Sites */}
+        <section className="mb-20">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">{t('portfolio.portfolioSites')}</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {portfolioSites.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
+        </section>
 
-        {/* Other Projects */}
+        {/* Living Tags Projects */}
         <section className="mb-20">
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">{t('portfolio.additional')}</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            {otherProjects.map((project, index) => (
+            {livingTagsProjects.map((project, index) => (
               <ProjectCard key={index} project={project} />
             ))}
           </div>

@@ -201,6 +201,7 @@
   "portfolio": {
     "title": "Портфолио",
     "featured": "Избранные проекты",
+    "portfolioSites": "Сайты-портфолио",
     "additional": "Проекты Living Tags",
     "projects": {
       "livingTagsPrototype": {

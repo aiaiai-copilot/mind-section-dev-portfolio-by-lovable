@@ -201,6 +201,7 @@
   "portfolio": {
     "title": "Portfolio",
     "featured": "Featured Projects",
+    "portfolioSites": "Portfolio Sites",
     "additional": "Living Tags Projects",
     "projects": {
       "livingTagsPrototype": {
