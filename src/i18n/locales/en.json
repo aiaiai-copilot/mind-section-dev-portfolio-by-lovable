@@ -41,7 +41,7 @@
     }
   },
   "about": {
-    "title": "",
+    "title": "About Me",
     "description": "Web applications built to last — with explicit structure, thorough documentation, and code that's good maintainable by developers and AI alike",
     "technicalExpertise": {
       "title": "Technical Expertise",

@@ -284,8 +284,8 @@
   "blog": {
     "title": "Блог",
     "subtitle": "Размышления о Spec-Driven Development, архитектуре ПО и современных веб-технологиях",
-    "featured": "Избранные статьи",
-    "allPosts": "Все статьи",
+    "featured": "Избранное",
+    "allPosts": "Всё",
     "readMore": "Читать далее",
     "backToList": "← Назад к блогу"
   },
