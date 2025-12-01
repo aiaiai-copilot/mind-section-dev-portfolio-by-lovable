@@ -201,6 +201,7 @@
   "portfolio": {
     "title": "Portfolio",
     "featured": "Featured Projects",
+    "portfolioSites": "Portfolio Sites",
     "additional": "Living Tags Projects",
     "projects": {
       "livingTagsPrototype": {
@@ -259,6 +260,24 @@
           "type": "SaaS",
           "access": "Beta",
           "status": "Coming Soon"
+        }
+      },
+      "portfolio": {
+        "title": "Developer Portfolio",
+        "description": "This website. A showcase of my work and skills, built with modern web technologies.",
+        "longDescription": "A personal portfolio website designed to demonstrate my technical expertise and design capabilities. Built with React, TypeScript, and Tailwind CSS, it features a clean, responsive design and internationalization support.",
+        "features": [
+          "Responsive Design",
+          "Internationalization (i18n)",
+          "Modern UI/UX",
+          "Dark Mode Support",
+          "Performance Optimized"
+        ],
+        "metrics": {
+          "phase": "Live",
+          "type": "Website",
+          "access": "Public",
+          "status": "Active"
         }
       }
     }
