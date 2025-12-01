@@ -44,9 +44,10 @@ const About = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             {t('about.title')}
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            {t('about.description')}
-          </p>
+          <p
+            className="text-xl text-muted-foreground max-w-5xl mx-auto leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: t('about.description') }}
+          />
         </div>
 
         {/* Skills Section */}
