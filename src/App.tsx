@@ -6,11 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./components/theme-provider";
 import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
+import Home from "./pages/Home";
 import { Suspense, lazy } from "react";
 import PageLoader from "./components/PageLoader";
 
 // Lazy load pages for performance optimization
-const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Showcase = lazy(() => import("./pages/Showcase"));
 const ShowcaseViewer = lazy(() => import("./pages/ShowcaseViewer"));
