@@ -38,6 +38,7 @@ const Showcase = () => {
                     <img
                       src={project.image}
                       alt={t(`${projectTransKey}.title`)}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                     />
                   </Link>

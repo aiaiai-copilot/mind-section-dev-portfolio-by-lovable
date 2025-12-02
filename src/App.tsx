@@ -6,16 +6,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./components/theme-provider";
 import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Showcase from "./pages/Showcase";
-import ShowcaseViewer from "./pages/ShowcaseViewer";
-import Portfolio from "./pages/Portfolio";
-import PortfolioComingSoon from "./pages/PortfolioComingSoon";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
+import { Suspense, lazy } from "react";
+import PageLoader from "./components/PageLoader";
+
+// Lazy load pages for performance optimization
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Showcase = lazy(() => import("./pages/Showcase"));
+const ShowcaseViewer = lazy(() => import("./pages/ShowcaseViewer"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
+const PortfolioComingSoon = lazy(() => import("./pages/PortfolioComingSoon"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
+const Contact = lazy(() => import("./pages/Contact"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
@@ -28,19 +32,21 @@ const App = () => (
         <BrowserRouter>
           <ScrollToTop />
           <Layout>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/showcase" element={<Showcase />} />
-              <Route path="/showcase/*" element={<ShowcaseViewer />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/portfolio/coming-soon" element={<PortfolioComingSoon />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/:id" element={<BlogPost />} />
-              <Route path="/contact" element={<Contact />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/showcase" element={<Showcase />} />
+                <Route path="/showcase/*" element={<ShowcaseViewer />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/portfolio/coming-soon" element={<PortfolioComingSoon />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/:id" element={<BlogPost />} />
+                <Route path="/contact" element={<Contact />} />
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
           </Layout>
         </BrowserRouter>
       </TooltipProvider>
