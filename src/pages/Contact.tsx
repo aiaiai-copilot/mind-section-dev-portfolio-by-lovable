@@ -91,13 +91,20 @@ const Contact = () => {
       contact: "alexanderlapygin@gmail.com",
       action: "mailto:alexanderlapygin@gmail.com"
     },
-    {
-      icon: <Send className="h-6 w-6 text-primary" />,
-      title: t('contact.getInTouch.telegram.title'),
-      description: t('contact.getInTouch.telegram.description'),
-      contact: "@alexanderlapygin",
-      action: "https://t.me/alexanderlapygin"
-    }
+    // {
+    //   icon: <MessageSquare className="h-6 w-6 text-primary" />,
+    //   title: "Project Discussion",
+    //   description: "Schedule a consultation call",
+    //   contact: "30-minute free consultation",
+    //   action: "https://calendly.com"
+    // },
+    // {
+    //   icon: <Phone className="h-6 w-6 text-primary" />,
+    //   title: "Phone",
+    //   description: "Direct line for urgent inquiries",
+    //   contact: "+1 (555) 123-4567",
+    //   action: "tel:+15551234567"
+    // }
   ];
 
   const projectTypesObj = t('contact.form.projectTypes', { returnObjects: true }) as Record<string, string>;

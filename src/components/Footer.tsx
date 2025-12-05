@@ -1,8 +1,9 @@
-import { Github, Mail, Send } from 'lucide-react';
+import { Github, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+
   const { t } = useTranslation();
 
   const services = t('footer.services.list', { returnObjects: true }) as string[];
@@ -37,15 +38,6 @@ const Footer = () => {
               >
                 <Mail className="h-5 w-5" />
               </Link>
-              <a
-                href="https://t.me/alexanderlapygin"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Telegram"
-              >
-                <Send className="h-5 w-5" />
-              </a>
               <a
                 href="https://github.com/aiaiai-copilot"
                 className="text-muted-foreground hover:text-primary transition-colors"

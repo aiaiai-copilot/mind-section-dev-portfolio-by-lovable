@@ -343,10 +343,6 @@
       "email": {
         "title": "Email",
         "description": "Send me a detailed project inquiry"
-      },
-      "telegram": {
-        "title": "Telegram",
-        "description": "Quick questions and discussions (preferable)"
       }
     },
     "whatHappensNext": {
