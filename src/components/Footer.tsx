@@ -1,10 +1,9 @@
 import { Github, Mail } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
-  const location = useLocation();
-  const isContactPage = location.pathname.includes('/contact');
+
   const { t } = useTranslation();
 
   const services = t('footer.services.list', { returnObjects: true }) as string[];
@@ -32,15 +31,13 @@ const Footer = () => {
           <div>
             <h4 className="font-medium text-primary mb-4">{t('footer.connect')}</h4>
             <div className="flex space-x-4">
-              {!isContactPage && (
-                <Link
-                  to="/contact"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label="Contact"
-                >
-                  <Mail className="h-5 w-5" />
-                </Link>
-              )}
+              <Link
+                to="/contact"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Contact"
+              >
+                <Mail className="h-5 w-5" />
+              </Link>
               <a
                 href="https://github.com/aiaiai-copilot"
                 className="text-muted-foreground hover:text-primary transition-colors"
