@@ -1,4 +1,4 @@
-import { Github, Mail } from 'lucide-react';
+import { Github, Mail, Send } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -46,6 +46,15 @@ const Footer = () => {
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5" />
+              </a>
+              <a
+                href="https://t.me/alexanderlapygin"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Telegram"
+              >
+                <Send className="h-5 w-5" />
               </a>
             </div>
           </div>
