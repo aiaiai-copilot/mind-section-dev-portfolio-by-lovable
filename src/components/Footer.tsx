@@ -39,15 +39,6 @@ const Footer = () => {
                 <Mail className="h-5 w-5" />
               </Link>
               <a
-                href="https://github.com/aiaiai-copilot"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                <Github className="h-5 w-5" />
-              </a>
-              <a
                 href="https://t.me/alexanderlapygin"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
@@ -55,6 +46,15 @@ const Footer = () => {
                 aria-label="Telegram"
               >
                 <Send className="h-5 w-5" />
+              </a>
+              <a
+                href="https://github.com/aiaiai-copilot"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <Github className="h-5 w-5" />
               </a>
             </div>
           </div>
