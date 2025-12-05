@@ -343,6 +343,10 @@
       "email": {
         "title": "Email",
         "description": "Отправьте мне подробный запрос по проекту"
+      },
+      "telegram": {
+        "title": "Telegram",
+        "description": "Быстрые вопросы и обсуждения (предпочтительно)"
       }
     },
     "whatHappensNext": {
